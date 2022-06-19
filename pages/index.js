@@ -31,12 +31,14 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
             <h1 className="header-size-xxl">{hero.title}</h1>
             <hr className="hero-separator" />
             <p className="font-size-m">{hero.description}</p>
-            <hr className="hero-separator" />
-            <Link href="/portraits">
-              <a className="button-s button-white">
-                Go to Portraits
-              </a>
-            </Link>
+            {/*
+              <hr className="hero-separator" />
+              <Link href="/portraits">
+                <a className="button-s button-white">
+                  Go to Portraits
+                </a>
+              </Link>
+            */}
           </div>
         </div>
       </div>

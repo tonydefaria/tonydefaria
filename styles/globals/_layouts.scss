@@ -39,8 +39,8 @@
 }
 
 .main {
-  // border-left: 16px solid $black;
-  // border-right: 16px solid $black;
+  border-left: 16px solid $black;
+  border-right: 16px solid $black;
   min-height: calc(100vh - 118px);
   padding: 168px 0 64px;
   .top {
@@ -85,25 +85,20 @@
 .frame-top {
   top: 0;
 }
+.frame-left,
+.frame-right {
+  bottom: 16px;
+  height: calc(100vh - 32px);
+  top: 16px;
+  width: 16px;
+}
 
 .frame-left {
-  position: fixed;
-  z-index: 999999;
-  background-color: $black;
-  width: 16px;
-  bottom: 16px;
   left: 0;
-  top: 16px;
 }
 
 .frame-right {
-  position: fixed;
-  z-index: 999999;
-  background-color: $black;
-  width: 16px;
-  bottom: 16px;
   right: 0;
-  top: 16px;
 }
 
 // Media Query 719px
