@@ -1,0 +1,17 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Fonts
+// -------------------------------------------------------------
+
+// Imports
+@import url("https://use.typekit.net/sjv6gba.css");
+@import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+// Adobe Fonts
+$mono: "Courier New", Courier, monospace !default;
+$sans: museo-sans, "Segoe UI", Tahoma, Verdana, sans-serif !default;
+$serif: museo-slab, Times, Georgia, serif !default;
+
+// Google Material Design Icons
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+}

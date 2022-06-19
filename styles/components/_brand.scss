@@ -1,0 +1,92 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Brand
+// -------------------------------------------------------------
+
+$class: "brand";
+
+.#{$class} {
+  float: left;
+  padding: 16px;
+  .#{$class}-box {
+    float: left;
+    .#{$class}-item {
+      float: left;
+      padding: 16px;
+      &.#{$class}-icon {
+        .link {
+          height: 24px;
+          width: 23.09px;
+          .icon {
+            height: inherit;
+            width: inherit;
+          }
+        }
+      }
+      &.#{$class}-logo {
+        .link {
+          height: 24px;
+          width: 152.02px;
+          .icon {
+            height: inherit;
+            width: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

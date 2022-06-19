@@ -1,0 +1,63 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Palettes
+// -------------------------------------------------------------
+
+// Black
+// -------------------------------------------------------------
+$black: rgba(10, 10, 10, 1) !default;
+
+// White
+// -------------------------------------------------------------
+$white: rgba(250, 250, 250, 1) !default;
+
+// Shadow
+// -------------------------------------------------------------
+$shadow: rgba(10, 10, 10, .1) !default;
+
+// Gray
+// -------------------------------------------------------------
+$gray-000: #ffffff !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #d8d8d8 !default;
+$gray-300: #bbbbbb !default;
+$gray-400: #9d9d9d !default;
+$gray-500: #808080 !default;
+$gray-600: #626262 !default;
+$gray-700: #454545 !default;
+$gray-800: #272727 !default;
+$gray-900: #0a0a0a !default;
+
+// Gray Default
+$gray: $gray-500 !default;
+
+// Yellow
+// -------------------------------------------------------------
+$yellow-000: #fff9e5 !default;
+$yellow-100: #fff2cc !default;
+$yellow-200: #ffe699 !default;
+$yellow-300: #ffd966 !default;
+$yellow-400: #ffcc33 !default;
+$yellow-500: #ffbf00 !default;
+$yellow-600: #cc9900 !default;
+$yellow-700: #997300 !default;
+$yellow-800: #664d00 !default;
+$yellow-900: #332600 !default;
+
+// Yellow Default
+$yellow: $yellow-500 !default;
+
+// Red
+// -------------------------------------------------------------
+$red-000: #ffe8e5 !default;
+$red-100: #ffd0cc !default;
+$red-200: #ffa299 !default;
+$red-300: #ff7366 !default;
+$red-400: #ff4433 !default;
+$red-500: #ff1500 !default;
+$red-600: #cc1100 !default;
+$red-700: #990d00 !default;
+$red-800: #660900 !default;
+$red-900: #330400 !default;
+
+// Red Default
+$red: $red-500 !default;

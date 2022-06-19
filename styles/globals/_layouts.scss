@@ -1,0 +1,142 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Layout
+// -------------------------------------------------------------
+
+.primary,
+.secondary,
+.tertiary {
+  background-color: $gray-100;
+  float: left;
+  width: 100%;
+}
+
+.gradient {
+  float: left;
+  width: 100%;
+}
+
+.page {
+  float: left;
+  width: 100%;
+}
+
+.header,
+.main,
+.footer {
+  float: left;
+  max-width: 100%;
+  width: 100%;
+}
+
+.header {
+  // border-left: 16px solid $black;
+  // border-right: 16px solid $black;
+  // border-top: 16px solid $black;
+  background-color: $gray-100;
+  padding: 16px 0 0;
+  position: fixed;
+  z-index: 99999;
+}
+
+.main {
+  // border-left: 16px solid $black;
+  // border-right: 16px solid $black;
+  min-height: calc(100vh - 118px);
+  padding: 168px 0 64px;
+  .top {
+    float: left;
+    width: 100%;
+  }
+  .middle {
+    float: left;
+    width: 100%;
+  }
+  .bottom {
+    float: left;
+    width: 100%;
+  }
+}
+
+.footer {
+  border-bottom: 16px solid $black;
+  border-left: 16px solid $black;
+  border-right: 16px solid $black;
+  min-height: 56px;
+  padding: 0 0 16px;
+}
+
+.frame {
+  background-color: $black;
+  position: fixed;
+  z-index: 999999;
+}
+
+.frame-bottom,
+.frame-top {
+  height: 16px;
+  left: 0;
+  right: 0;
+}
+
+.frame-bottom {
+  bottom: 0;
+}
+
+.frame-top {
+  top: 0;
+}
+
+.frame-left {
+  position: fixed;
+  z-index: 999999;
+  background-color: $black;
+  width: 16px;
+  bottom: 16px;
+  left: 0;
+  top: 16px;
+}
+
+.frame-right {
+  position: fixed;
+  z-index: 999999;
+  background-color: $black;
+  width: 16px;
+  bottom: 16px;
+  right: 0;
+  top: 16px;
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .header {
+    padding: 0;
+  }
+  .main {
+    min-height: calc(100vh - 102px);
+    padding: 104px 0 0;
+  }
+  .footer {
+    padding: 0;
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

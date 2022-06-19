@@ -1,0 +1,117 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Thumbnails
+// -------------------------------------------------------------
+
+$class: "thumbnails";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    float: left;
+    padding: 16px;
+    width: 100%;
+    .#{$class}-row {
+    }
+    .#{$class}-item {
+      float: left;
+      padding: 16px;
+      width: calc(100% / 2);
+      figure {
+        float: left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        .figure-gradient {
+          background: rgb(0,0,0);
+          background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+          float: left;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+        img,
+        span {
+          float: left;
+          margin: 0;
+          padding: 0;
+        }
+        .title {
+          bottom: 0;
+          padding: 32px;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      padding: 24px;
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+        padding: 8px;
+        width: calc(100% / 1);
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+      }
+    }
+  }
+}

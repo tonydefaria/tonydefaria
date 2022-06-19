@@ -1,0 +1,83 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Hamburger
+// -------------------------------------------------------------
+
+$class: "hamburger";
+
+.#{$class} {
+  float: right;
+  padding: 16px;
+  .#{$class}-box {
+    float: left;
+    list-style: none;
+    margin: 0;
+    width: auto;
+    .#{$class}-item {
+      float: left;
+      margin: 0;
+      padding: 16px;
+      width: auto;
+      svg {
+        float: left;
+        height: 24px;
+        margin: 0;
+        width: 24px;
+      }
+    }
+  }
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

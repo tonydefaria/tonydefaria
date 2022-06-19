@@ -1,0 +1,71 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Devices
+// -------------------------------------------------------------
+
+.mobile {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.desktop {
+  display: block !important;
+  visibility: visible !important;
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .mobile {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .desktop {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-item {
+      }
+    }
+  }
+}

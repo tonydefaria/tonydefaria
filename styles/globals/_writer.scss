@@ -1,0 +1,74 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Typography
+// -------------------------------------------------------------
+
+.writer {
+  h1 { @include header-size-xxl; margin: 15px 0 30px !important; }
+  h2 { @include header-size-xl; margin: 11px 0 22px !important; }
+  h3 { @include header-size-l; margin: 9px 0 18px !important; }
+  h4 { @include header-size-m; margin: 7px 0 14px !important; }
+  h5 { @include header-size-s; margin: 6px 0 12px !important; }
+  h6 { @include header-size-xs; margin: 5px 0 10px !important; }
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    margin-top: 0 !important;
+  }
+
+  p { @include font-size-m; margin: 0 0 40px !important; }
+  p:last-child { margin-bottom: 0 !important; }
+
+  ol,
+  ul {
+    @include header-size-m;
+    padding: 24px 0 !important;
+    margin: 0 0 40px !important;
+  }
+
+  code {
+    line-height: inherit !important;
+  }
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .writer {
+    h1 { margin: 11px 0 22px !important; }
+    h2 { margin: 9px 0 18px !important; }
+    h3 { margin: 7px 0 14px !important; }
+    h4 { margin: 6px 0 12px !important; }
+    h5 { margin: 5px 0 10px !important; }
+    h6 { margin: 4px 0 8px !important; }
+
+    p,
+    ol,
+    ul {
+      margin: 0 0 32px !important;
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}

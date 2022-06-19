@@ -1,0 +1,117 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Header Sizes
+// -------------------------------------------------------------
+
+@mixin header-size-xxs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin header-size-xs {
+  font-size: 16px;
+  line-height: 20px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@mixin header-size-s {
+  font-size: 20px;
+  line-height: 24px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@mixin header-size-m {
+  font-size: 24px;
+  line-height: 28px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@mixin header-size-l {
+  font-size: 32px;
+  line-height: 36px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@mixin header-size-xl {
+  font-size: 40px;
+  line-height: 44px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@mixin header-size-xxl {
+  font-size: 56px;
+  line-height: 60px;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+// Classes
+// -------------------------------------------------------------
+.header-size-xxs {
+  @include header-size-xxs;
+  p, div { @include header-size-xxs; }
+}
+
+.header-size-xs {
+  @include header-size-xs;
+  p, div { @include header-size-xs; }
+}
+
+.header-size-s {
+  @include header-size-s;
+  p, div { @include header-size-s; }
+}
+
+.header-size-m {
+  @include header-size-m;
+  p, div { @include header-size-m; }
+}
+
+.header-size-l {
+  @include header-size-l;
+  p, div { @include header-size-l; }
+}
+
+.header-size-xl {
+  @include header-size-xl;
+  p, div { @include header-size-xl; }
+}
+
+.header-size-xxl {
+  @include header-size-xxl;
+  p, div { @include header-size-xxl; }
+}

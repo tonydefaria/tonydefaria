@@ -1,0 +1,217 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Paddings
+// -------------------------------------------------------------
+
+$class: "padding";
+
+// Reset
+// -------------------------------------------------------------
+.#{$class}-0 { padding: 0 !important; }
+
+// All
+// -------------------------------------------------------------
+.#{$class}-2  { padding: 2px !important; }
+.#{$class}-4  { padding: 4px !important; }
+.#{$class}-8  { padding: 8px !important; }
+.#{$class}-12 { padding: 12px !important; }
+.#{$class}-16 { padding: 16px !important; }
+.#{$class}-20 { padding: 20px !important; }
+.#{$class}-24 { padding: 24px !important; }
+.#{$class}-28 { padding: 28px !important; }
+.#{$class}-32 { padding: 32px !important; }
+.#{$class}-40 { padding: 40px !important; }
+.#{$class}-48 { padding: 48px !important; }
+.#{$class}-56 { padding: 56px !important; }
+.#{$class}-64 { padding: 64px !important; }
+
+// Top
+// -------------------------------------------------------------
+.#{$class}-2-0-0  { padding: 2px 0 0 !important; }
+.#{$class}-4-0-0  { padding: 4px 0 0 !important; }
+.#{$class}-8-0-0  { padding: 8px 0 0 !important; }
+.#{$class}-12-0-0 { padding: 12px 0 0 !important; }
+.#{$class}-16-0-0 { padding: 16px 0 0 !important; }
+.#{$class}-20-0-0 { padding: 20px 0 0 !important; }
+.#{$class}-24-0-0 { padding: 24px 0 0 !important; }
+.#{$class}-28-0-0 { padding: 28px 0 0 !important; }
+.#{$class}-32-0-0 { padding: 32px 0 0 !important; }
+.#{$class}-40-0-0 { padding: 40px 0 0 !important; }
+.#{$class}-48-0-0 { padding: 48px 0 0 !important; }
+.#{$class}-56-0-0 { padding: 56px 0 0 !important; }
+.#{$class}-64-0-0 { padding: 64px 0 0 !important; }
+
+// Top, Left & Right
+// -------------------------------------------------------------
+.#{$class}-2-2-0  { padding: 2px 2px 0 !important; }
+.#{$class}-4-4-0  { padding: 4px 4px 0 !important; }
+.#{$class}-8-8-0  { padding: 8px 8px 0 !important; }
+.#{$class}-12-12-0 { padding: 12px 12px 0 !important; }
+.#{$class}-16-16-0 { padding: 16px 16px 0 !important; }
+.#{$class}-20-20-0 { padding: 20px 20px 0 !important; }
+.#{$class}-24-24-0 { padding: 24px 24px 0 !important; }
+.#{$class}-28-28-0 { padding: 28px 28px 0 !important; }
+.#{$class}-32-32-0 { padding: 32px 32px 0 !important; }
+.#{$class}-40-40-0 { padding: 40px 40px 0 !important; }
+.#{$class}-48-48-0 { padding: 48px 48px 0 !important; }
+.#{$class}-56-56-0 { padding: 56px 56px 0 !important; }
+.#{$class}-64-64-0 { padding: 64px 64px 0 !important; }
+
+// Top & Left
+// -------------------------------------------------------------
+.#{$class}-2-0-0-2   { padding: 2px 0 0 2px !important; }
+.#{$class}-4-0-0-4   { padding: 4px 0 0 4px !important; }
+.#{$class}-8-0-0-8   { padding: 8px 0 0 8px !important; }
+.#{$class}-12-0-0-12 { padding: 12px 0 0 12px !important; }
+.#{$class}-16-0-0-16 { padding: 16px 0 0 16px !important; }
+.#{$class}-20-0-0-20 { padding: 20px 0 0 20px !important; }
+.#{$class}-24-0-0-24 { padding: 24px 0 0 24px !important; }
+.#{$class}-28-0-0-28 { padding: 28px 0 0 28px !important; }
+.#{$class}-32-0-0-32 { padding: 32px 0 0 32px !important; }
+.#{$class}-40-0-0-40 { padding: 40px 0 0 40px !important; }
+.#{$class}-48-0-0-48 { padding: 48px 0 0 48px !important; }
+.#{$class}-56-0-0-56 { padding: 56px 0 0 56px !important; }
+.#{$class}-64-0-0-64 { padding: 64px 0 0 64px !important; }
+
+// Top & Right
+// -------------------------------------------------------------
+.#{$class}-2-2-0-0   { padding: 2px 2px 0 0 !important; }
+.#{$class}-4-4-0-0   { padding: 4px 4px 0 0 !important; }
+.#{$class}-8-8-0-0   { padding: 8px 8px 0 0 !important; }
+.#{$class}-12-12-0-0 { padding: 12px 12px 0 0 !important; }
+.#{$class}-16-16-0-0 { padding: 16px 16px 0 0 !important; }
+.#{$class}-20-20-0-0 { padding: 20px 20px 0 0 !important; }
+.#{$class}-24-24-0-0 { padding: 24px 24px 0 0 !important; }
+.#{$class}-28-28-0-0 { padding: 28px 28px 0 0 !important; }
+.#{$class}-32-32-0-0 { padding: 32px 32px 0 0 !important; }
+.#{$class}-40-40-0-0 { padding: 40px 40px 0 0 !important; }
+.#{$class}-48-48-0-0 { padding: 48px 48px 0 0 !important; }
+.#{$class}-56-56-0-0 { padding: 56px 56px 0 0 !important; }
+.#{$class}-64-64-0-0 { padding: 64px 64px 0 0 !important; }
+
+// Top & Bottom
+// -------------------------------------------------------------
+.#{$class}-2-0  { padding: 2px 0 !important; }
+.#{$class}-4-0  { padding: 4px 0 !important; }
+.#{$class}-8-0  { padding: 8px 0 !important; }
+.#{$class}-12-0 { padding: 12px 0 !important; }
+.#{$class}-16-0 { padding: 16px 0 !important; }
+.#{$class}-20-0 { padding: 20px 0 !important; }
+.#{$class}-24-0 { padding: 24px 0 !important; }
+.#{$class}-28-0 { padding: 28px 0 !important; }
+.#{$class}-32-0 { padding: 32px 0 !important; }
+.#{$class}-40-0 { padding: 40px 0 !important; }
+.#{$class}-48-0 { padding: 48px 0 !important; }
+.#{$class}-56-0 { padding: 56px 0 !important; }
+.#{$class}-64-0 { padding: 64px 0 !important; }
+
+// Bottom
+// -------------------------------------------------------------
+.#{$class}-0-0-2  { padding: 0 0 2px !important; }
+.#{$class}-0-0-4  { padding: 0 0 4px !important; }
+.#{$class}-0-0-8  { padding: 0 0 8px !important; }
+.#{$class}-0-0-12 { padding: 0 0 12px !important; }
+.#{$class}-0-0-16 { padding: 0 0 16px !important; }
+.#{$class}-0-0-20 { padding: 0 0 20px !important; }
+.#{$class}-0-0-24 { padding: 0 0 24px !important; }
+.#{$class}-0-0-28 { padding: 0 0 28px !important; }
+.#{$class}-0-0-32 { padding: 0 0 32px !important; }
+.#{$class}-0-0-40 { padding: 0 0 40px !important; }
+.#{$class}-0-0-48 { padding: 0 0 48px !important; }
+.#{$class}-0-0-56 { padding: 0 0 56px !important; }
+.#{$class}-0-0-64 { padding: 0 0 64px !important; }
+
+// Bottom, Left & Right
+// -------------------------------------------------------------
+.#{$class}-0-2-2  { padding: 0 2px 2px !important; }
+.#{$class}-0-4-4  { padding: 0 4px 4px !important; }
+.#{$class}-0-8-8  { padding: 0 8px 8px !important; }
+.#{$class}-0-12-12 { padding: 0 12px 12px !important; }
+.#{$class}-0-16-16 { padding: 0 16px 16px !important; }
+.#{$class}-0-20-20 { padding: 0 20px 20px !important; }
+.#{$class}-0-24-24 { padding: 0 24px 24px !important; }
+.#{$class}-0-28-28 { padding: 0 28px 28px !important; }
+.#{$class}-0-32-32 { padding: 0 32px 32px !important; }
+.#{$class}-0-40-40 { padding: 0 40px 40px !important; }
+.#{$class}-0-48-48 { padding: 0 48px 48px !important; }
+.#{$class}-0-56-56 { padding: 0 56px 56px !important; }
+.#{$class}-0-64-64 { padding: 0 64px 64px !important; }
+
+// Bottom & left
+// -------------------------------------------------------------
+.#{$class}-0-0-2-2   { padding: 0 0 2px 2px !important; }
+.#{$class}-0-0-4-4   { padding: 0 0 4px 4px !important; }
+.#{$class}-0-0-8-8   { padding: 0 0 8px 8px !important; }
+.#{$class}-0-0-12-12 { padding: 0 0 12px 12px !important; }
+.#{$class}-0-0-16-16 { padding: 0 0 16px 16px !important; }
+.#{$class}-0-0-20-20 { padding: 0 0 20px 20px !important; }
+.#{$class}-0-0-24-24 { padding: 0 0 24px 24px !important; }
+.#{$class}-0-0-28-28 { padding: 0 0 28px 28px !important; }
+.#{$class}-0-0-32-32 { padding: 0 0 32px 32px !important; }
+.#{$class}-0-0-40-40 { padding: 0 0 40px 40px !important; }
+.#{$class}-0-0-48-48 { padding: 0 0 48px 48px !important; }
+.#{$class}-0-0-56-56 { padding: 0 0 56px 56px !important; }
+.#{$class}-0-0-64-64 { padding: 0 0 64px 64px !important; }
+
+// Bottom & Right
+// -------------------------------------------------------------
+.#{$class}-0-2-2-0   { padding: 0 2px 2px 0 !important; }
+.#{$class}-0-4-4-0   { padding: 0 4px 4px 0 !important; }
+.#{$class}-0-8-8-0   { padding: 0 8px 8px 0 !important; }
+.#{$class}-0-12-12-0 { padding: 0 12px 12px 0 !important; }
+.#{$class}-0-16-16-0 { padding: 0 16px 16px 0 !important; }
+.#{$class}-0-20-20-0 { padding: 0 20px 20px 0 !important; }
+.#{$class}-0-24-24-0 { padding: 0 24px 24px 0 !important; }
+.#{$class}-0-28-28-0 { padding: 0 28px 28px 0 !important; }
+.#{$class}-0-32-32-0 { padding: 0 32px 32px 0 !important; }
+.#{$class}-0-40-40-0 { padding: 0 40px 40px 0 !important; }
+.#{$class}-0-48-48-0 { padding: 0 48px 48px 0 !important; }
+.#{$class}-0-56-56-0 { padding: 0 56px 56px 0 !important; }
+.#{$class}-0-64-64-0 { padding: 0 64px 64px 0 !important; }
+
+// Left & Right
+// -------------------------------------------------------------
+.#{$class}-0-2  { padding: 0 2px !important; }
+.#{$class}-0-4  { padding: 0 4px !important; }
+.#{$class}-0-8  { padding: 0 8px !important; }
+.#{$class}-0-12 { padding: 0 12px !important; }
+.#{$class}-0-16 { padding: 0 16px !important; }
+.#{$class}-0-20 { padding: 0 20px !important; }
+.#{$class}-0-24 { padding: 0 24px !important; }
+.#{$class}-0-28 { padding: 0 28px !important; }
+.#{$class}-0-32 { padding: 0 32px !important; }
+.#{$class}-0-40 { padding: 0 40px !important; }
+.#{$class}-0-48 { padding: 0 48px !important; }
+.#{$class}-0-56 { padding: 0 56px !important; }
+.#{$class}-0-64 { padding: 0 64px !important; }
+
+// Left
+// -------------------------------------------------------------
+.#{$class}-0-0-0-2  { padding: 0 0 0 2px !important; }
+.#{$class}-0-0-0-4  { padding: 0 0 0 4px !important; }
+.#{$class}-0-0-0-8  { padding: 0 0 0 8px !important; }
+.#{$class}-0-0-0-12 { padding: 0 0 0 12px !important; }
+.#{$class}-0-0-0-16 { padding: 0 0 0 16px !important; }
+.#{$class}-0-0-0-20 { padding: 0 0 0 20px !important; }
+.#{$class}-0-0-0-24 { padding: 0 0 0 24px !important; }
+.#{$class}-0-0-0-28 { padding: 0 0 0 28px !important; }
+.#{$class}-0-0-0-32 { padding: 0 0 0 32px !important; }
+.#{$class}-0-0-0-40 { padding: 0 0 0 40px !important; }
+.#{$class}-0-0-0-48 { padding: 0 0 0 48px !important; }
+.#{$class}-0-0-0-56 { padding: 0 0 0 56px !important; }
+.#{$class}-0-0-0-64 { padding: 0 0 0 64px !important; }
+
+// Right
+// -------------------------------------------------------------
+.#{$class}-0-2-0-0  { padding: 0 2px 0 0 !important; }
+.#{$class}-0-4-0-0  { padding: 0 4px 0 0 !important; }
+.#{$class}-0-8-0-0  { padding: 0 8px 0 0 !important; }
+.#{$class}-0-12-0-0 { padding: 0 12px 0 0 !important; }
+.#{$class}-0-16-0-0 { padding: 0 16px 0 0 !important; }
+.#{$class}-0-20-0-0 { padding: 0 20px 0 0 !important; }
+.#{$class}-0-24-0-0 { padding: 0 24px 0 0 !important; }
+.#{$class}-0-28-0-0 { padding: 0 28px 0 0 !important; }
+.#{$class}-0-32-0-0 { padding: 0 32px 0 0 !important; }
+.#{$class}-0-40-0-0 { padding: 0 40px 0 0 !important; }
+.#{$class}-0-48-0-0 { padding: 0 48px 0 0 !important; }
+.#{$class}-0-56-0-0 { padding: 0 56px 0 0 !important; }
+.#{$class}-0-64-0-0 { padding: 0 64px 0 0 !important; }

@@ -1,0 +1,93 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Content
+// -------------------------------------------------------------
+
+$class: "content";
+
+.#{$class} {
+  float: left;
+  width: 100%;
+  .#{$class}-box {
+    float: left;
+    padding: 16px;
+    width: 100%;
+    .#{$class}-row {
+      float: left;
+      padding: 16px;
+      width: 100%;
+    }
+    .#{$class}-separator {
+      border: none;
+      float: left;
+      height: 0px;
+      margin: 16px 0;
+      width: 100%;
+    }
+  }
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+        width: 100%;
+      }
+      .#{$class}-separator {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+      }
+    }
+  }
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+      }
+    }
+  }
+}

@@ -1,0 +1,178 @@
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// File: Typography
+// -------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  float: left;
+  font-weight: 900;
+  hyphens: none;
+  width: 100%;
+}
+
+h1 { @include header-size-xxl; }
+h2 { @include header-size-xl; }
+h3 { @include header-size-l; }
+h4 { @include header-size-m; }
+h5 { @include header-size-s; }
+h6 { @include header-size-xs; }
+
+p {
+  @include font-size-m;
+  float: left;
+  font-weight: 400;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  a {
+    color: $black;
+    display: inline;
+    float: none;
+    font-size: inherit;
+    font-weight: 900;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    vertical-align: bottom;
+    &:link,
+    &:visited {
+      color: $black;
+    }
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+ol,
+ul {
+  @include header-size-m;
+  display: block;
+  float: left;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  li {
+    float: left;
+    margin: 8px 0;
+    padding: 0;
+    width: 100%;
+    a {
+      color: $black;
+      display: inline;
+      float: none;
+      font-size: inherit;
+      font-weight: 900;
+      line-height: inherit;
+      margin: 0;
+      padding: 0;
+      text-decoration: underline;
+      vertical-align: bottom;
+      &:link,
+      &:visited {
+        color: $black;
+      }
+      &:hover,
+      &:active {
+        color: $black;
+      }
+    }
+  }
+  li:first-child {
+    margin-top: 0;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+abbr,
+code,
+del,
+em,
+mark,
+small,
+sub,
+sup,
+strong {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+abbr {
+  cursor: help;
+  text-decoration: underline dashed;
+}
+code {
+  @include header-size-xs;
+  -webkit-box-decoration-break: clone;
+  background-color: $gray-200;
+  box-decoration-break: clone;
+  border-radius: 2px;
+  padding: 0 4px;
+}
+del {
+  text-decoration: line-through;
+}
+mark {
+  background-color: $yellow;
+}
+small {
+  font-size: 70%;
+}
+sub {
+  font-size: 70%;
+}
+sup {
+  font-size: 70%;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+// Media Query 719px
+// -------------------------------------------------------------
+@media #{$mobile} {
+}
+
+// Media Query 720px
+// -------------------------------------------------------------
+@media #{$m} {
+}
+
+// Media Query 960px
+// -------------------------------------------------------------
+@media #{$l} {
+}
+
+// Media Query 1440px
+// -------------------------------------------------------------
+@media #{$xl} {
+}
+
+// Media Query 1920px
+// -------------------------------------------------------------
+@media #{$xxl} {
+}
