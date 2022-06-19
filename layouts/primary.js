@@ -4,6 +4,7 @@
 import React, { useState, useEffect, useCallback } from "react"
 
 // Components
+import FaviconComponent from "../components/favicon_component"
 import BrandComponent from "../components/brand_component"
 import MenuComponent from "../components/menu_component"
 import SocialNetworksPrimaryComponent from "../components/social_networks_primary_component"
@@ -21,6 +22,7 @@ export default function Primary({ children }) {
 
   return (
     <div className="primary">
+      <FaviconComponent project={project} />
       <div className="gradient">
         <header className="universal header">
           <div className="universal-box">
