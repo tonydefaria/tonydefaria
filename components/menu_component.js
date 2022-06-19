@@ -10,6 +10,14 @@ import HamburgerIcon from "../svgs/hamburger"
 import CloseIcon from "../svgs/close"
 
 export default function MenuComponent() {
+  // Cabin Events
+  const trackMenuPortraitsCabin = (event) => {
+    window.cabin.event("Menu Portraits")
+  }
+  const trackMenuContactCabin = (event) => {
+    window.cabin.event("Menu Contact")
+  }
+
   const [isOpen, setIsOpen] = useState(false)
 
   // Delay
@@ -68,10 +76,10 @@ export default function MenuComponent() {
             </li>
           */}
           <li className="menu-item">
-            <Link href="/portraits"><a className="link-l link-white text-align-center text-transform-uppercase width-wide">Portraits</a></Link>
+            <Link href="/portraits"><a className="link-l link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
           </li>
           <li className="menu-item">
-            <Link href="/contact"><a className="link-l link-white text-align-center text-transform-uppercase width-wide">Contact</a></Link>
+            <Link href="/contact"><a className="link-l link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
           </li>
         </ul>
       </div>

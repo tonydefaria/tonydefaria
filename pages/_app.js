@@ -5,6 +5,9 @@ import React, { useEffect, useLayoutEffect } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import smoothscroll from "smoothscroll-polyfill";
 
+// Components
+import ScriptsComponent from "../components/scripts_component"
+
 // Stylesheets
 import "../styles/composer.scss"
 
@@ -14,15 +17,16 @@ export default function MyApp({ Component, pageProps}) {
   useEffect(() => {
     smoothscroll.polyfill();
     // Prevent from saving images.
-    // document.addEventListener("contextmenu", function(event) {
-    //   if (event.target.nodeName === "IMG") {
-    //     event.preventDefault()
-    //   }
-    // }, false)
+    document.addEventListener("contextmenu", function(event) {
+      if (event.target.nodeName === "IMG") {
+        event.preventDefault()
+      }
+    }, false)
   }, [])
 
   return (
     <>
+      <ScriptsComponent />
       <AnimatePresence exitBeforeEnter>
         <Layout>
           <Component {...pageProps} />
