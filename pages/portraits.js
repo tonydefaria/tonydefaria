@@ -19,7 +19,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacity: 0}}
-      transition={{opacity: {duration: 1}}}
+      transition={{opacity: {duration: 0.25}}}
       className="page"
     >
       {/* Meta */}
