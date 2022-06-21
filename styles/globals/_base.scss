@@ -64,14 +64,18 @@ figure {
   float: left;
   margin: 0;
   max-height: 100%;
+  min-height: 128px;
   // max-width: 100%;
   overflow: hidden;
   padding: 0;
   .figwrapper {
+    border-radius: 3px;
     float: left;
+    min-height: 106px;
     width: 100%;
     img {
-      border-radius: 2px;
+      border-radius: 3px;
+      min-height: 106px;
     }
   }
   figcaption {
@@ -79,6 +83,7 @@ figure {
     border: 0;
     font-family: $mono;
     font-size: 12px;
+    min-height: 22px;
     margin: 0;
     vertical-align: bottom;
     width: auto;

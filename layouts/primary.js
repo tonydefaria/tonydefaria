@@ -52,10 +52,12 @@ export default function Primary({ children }) {
       </div>
 
       {/* Frame */}
-      <div className="frame frame-top" />
-      <div className="frame frame-bottom" />
-      <div className="frame frame-left" />
-      <div className="frame frame-right" />
+      {/*
+        <div className="frame frame-top" />
+        <div className="frame frame-bottom" />
+        <div className="frame frame-left" />
+        <div className="frame frame-right" />
+      */}
     </div>
   )
 }

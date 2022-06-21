@@ -36,13 +36,15 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
         </div>
       </div>
 
+      <div className="separator-xl"></div>
+
       {/* Gallery */}
       <div className="gallery">
         <div className="gallery-box">
           {images.map((image) => (
             <div key={image.uid} className="gallery-item flex-h-center">
               <figure>
-                <div className="black-bg figwrapper flex-h-center">
+                <div className="figwrapper flex-h-center">
                   <Image src={image.image} width={image.width} height={image.height} quality={75} alt="Tony de Faria - Portraits - Gallery Image" title="Tony de Faria" />
                 </div>
                 <figcaption>

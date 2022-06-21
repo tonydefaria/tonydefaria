@@ -41,7 +41,7 @@
 .main {
   // border-left: 16px solid $black;
   // border-right: 16px solid $black;
-  min-height: calc(100vh - 118px);
+  min-height: calc(100vh - 150px);
   padding: 168px 0 64px;
   .top {
     float: left;
@@ -61,45 +61,46 @@
   // border-bottom: 16px solid $black;
   // border-left: 16px solid $black;
   // border-right: 16px solid $black;
-  min-height: 56px;
-  padding: 0 0 16px;
+  // min-height: 56px;
+  padding: 32px 0;
 }
 
-.frame {
-  background-color: $black;
-  position: fixed;
-  z-index: 999999;
-}
+// .frame {
+//   background-color: $black;
+//   position: fixed;
+//   z-index: 999999;
+// }
 
-.frame-bottom,
-.frame-top {
-  height: 16px;
-  left: 0;
-  right: 0;
-}
+// .frame-bottom,
+// .frame-top {
+//   height: 16px;
+//   left: 0;
+//   right: 0;
+// }
 
-.frame-bottom {
-  bottom: 0;
-}
+// .frame-bottom {
+//   bottom: 0;
+// }
 
-.frame-top {
-  top: 0;
-}
-.frame-left,
-.frame-right {
-  bottom: 16px;
-  height: calc(100vh - 32px);
-  top: 16px;
-  width: 16px;
-}
+// .frame-top {
+//   top: 0;
+// }
 
-.frame-left {
-  left: 0;
-}
+// .frame-left,
+// .frame-right {
+//   bottom: 16px;
+//   height: calc(100vh - 32px);
+//   top: 16px;
+//   width: 16px;
+// }
 
-.frame-right {
-  right: 0;
-}
+// .frame-left {
+//   left: 0;
+// }
+
+// .frame-right {
+//   right: 0;
+// }
 
 // Media Query 719px
 // -------------------------------------------------------------
