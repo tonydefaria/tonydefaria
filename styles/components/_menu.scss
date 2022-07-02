@@ -6,7 +6,7 @@ $class: "menu";
 
 .#{$class} {
   backdrop-filter: blur(8px);
-  background-color: rgba(10, 10, 10, .97);
+  background-color: rgba(10, 10, 10, .90);
   bottom: 0;
   float: left;
   left: 0;
@@ -21,7 +21,10 @@ $class: "menu";
     list-style: none;
     width: 320px;
     .#{$class}-item {
+      background-color: $black;
+      border-radius: 3px;
       float: left;
+      padding: 16px;
       width: 100%;
     }
   }
@@ -32,7 +35,7 @@ $class: "menu";
 @media #{$mobile} {
   .#{$class} {
     .#{$class}-box {
-      width: 100%;
+      // width: 100%;
       .#{$class}-item {
       }
     }
