@@ -80,10 +80,10 @@ export default function MenuComponent() {
             </li>
           */}
           <li className="menu-item">
-            <Link href="/portraits"><a className="link-s link-white text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+            <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
           </li>
           <li className="menu-item">
-            <Link href="/contact"><a className="link-s link-white text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+            <Link href="/contact"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
           </li>
         </ul>
       </div>
