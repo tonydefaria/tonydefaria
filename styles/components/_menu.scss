@@ -21,10 +21,7 @@ $class: "menu";
     list-style: none;
     width: 320px;
     .#{$class}-item {
-      background-color: $black;
-      border-radius: 3px;
       float: left;
-      padding: 16px;
       width: 100%;
     }
   }
