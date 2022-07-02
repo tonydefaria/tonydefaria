@@ -18,6 +18,7 @@ export default function MenuComponent() {
     window.cabin.event("Menu Contact")
   }
 
+  // Menu overlay
   const [isOpen, setIsOpen] = useState(false)
 
   // Delay
@@ -31,10 +32,12 @@ export default function MenuComponent() {
   }
 
   useEffect(() => {
+    const body = document.getElementById("body")
     const icon = document.getElementById("brand-icon")
     const brand = document.getElementById("brand-logo")
     if (!isOpen) {
       // Remove
+      body.classList.remove("noscroll")
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
       // Add
@@ -45,6 +48,7 @@ export default function MenuComponent() {
       icon.classList.remove("link-black")
       brand.classList.remove("link-black")
       // Add
+      body.classList.add("noscroll")
       icon.classList.add("link-white")
       brand.classList.add("link-white")
     }
@@ -76,10 +80,10 @@ export default function MenuComponent() {
             </li>
           */}
           <li className="menu-item">
-            <Link href="/portraits"><a className="link-l link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+            <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
           </li>
           <li className="menu-item">
-            <Link href="/contact"><a className="link-l link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+            <Link href="/contact"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
           </li>
         </ul>
       </div>

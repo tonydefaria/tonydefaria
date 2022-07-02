@@ -16,6 +16,10 @@ body {
   min-width: 100%;
   padding: 0;
   width: 100%;
+  transition: height 1000000s ease;
+  -webkit-transition: height 1000000s ease;
+  -moz-transition: height 1000000s ease;
+  -o-transition: height 1000000s ease;
 }
 
 html {
@@ -116,6 +120,10 @@ svg {
   overflow: hidden;
   padding: 0;
   width: auto;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 // Media Query 719px
