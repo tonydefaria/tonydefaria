@@ -4,7 +4,8 @@
 import Primary from "../layouts/primary"
 
 // Built-in Components
-import Image from "next/image"
+// import Image from "next/image"
+import Image from "next/future/image"
 import { motion } from "framer-motion"
 
 // Components

@@ -1,10 +1,15 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 
 const nextConfig = {
   trailingSlash: true,
   webpack5: true,
   images: {
     domains: ["hankyo-production.fra1.cdn.digitaloceanspaces.com"],
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true
+    }
   },
   reactStrictMode: true,
   async headers() {
