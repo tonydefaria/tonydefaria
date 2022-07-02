@@ -37,7 +37,7 @@ export default function MenuComponent() {
     const brand = document.getElementById("brand-logo")
     if (!isOpen) {
       // Remove
-      body.classList.remove("noscroll")
+      // body.classList.remove("noscroll")
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
       // Add
@@ -48,7 +48,7 @@ export default function MenuComponent() {
       icon.classList.remove("link-black")
       brand.classList.remove("link-black")
       // Add
-      body.classList.add("noscroll")
+      // body.classList.add("noscroll")
       icon.classList.add("link-white")
       brand.classList.add("link-white")
     }
@@ -80,10 +80,10 @@ export default function MenuComponent() {
             </li>
           */}
           <li className="menu-item">
-            <Link href="/portraits"><a className="button-s button-black text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+            <Link href="/portraits"><a className="link-s link-white text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
           </li>
           <li className="menu-item">
-            <Link href="/contact"><a className="button-s button-black text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+            <Link href="/contact"><a className="link-s link-white text-align-center text-transform-uppercase width-wide padding-16" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
           </li>
         </ul>
       </div>
