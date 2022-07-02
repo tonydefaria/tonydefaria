@@ -2,6 +2,7 @@
 
 // Built-in Components
 import Document, { Html, Head, Main, NextScript } from "next/document"
+import Script from "next/script"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -12,7 +13,13 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <Script
+            id="cabin"
+            src="https://cabin.tonydefaria.com/hello.js"
+            strategy="beforeInteractive"
+          />
+        </Head>
         <body id="body">
           <Main />
           <NextScript />

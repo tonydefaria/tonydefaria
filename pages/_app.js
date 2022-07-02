@@ -3,10 +3,7 @@
 // Built-in Components
 import React, { useEffect, useLayoutEffect } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import smoothscroll from "smoothscroll-polyfill";
-
-// Components
-import ScriptsComponent from "../components/scripts_component"
+import smoothscroll from "smoothscroll-polyfill"
 
 // Stylesheets
 import "../styles/composer.scss"
@@ -26,7 +23,6 @@ export default function MyApp({ Component, pageProps}) {
 
   return (
     <>
-      <ScriptsComponent />
       <AnimatePresence exitBeforeEnter>
         <Layout>
           <Component {...pageProps} />
