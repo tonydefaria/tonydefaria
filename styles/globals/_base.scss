@@ -132,6 +132,9 @@ svg {
 // Media Query 719px
 // -------------------------------------------------------------
 @media #{$mobile} {
+  body {
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 // Media Query 720px
