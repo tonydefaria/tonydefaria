@@ -2204,10 +2204,10 @@ negotiator@^0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-sitemap@^3.1.7:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.7.tgz#601e3436ca732f0b8adb00254e0f79f44b8559b4"
-  integrity sha512-8o+rUftEtZ7d3s2BedBLeN0HZHPAtcvliA/YesP/2o7Llb5svvM/pqVBde17MgTEuGMZpHz6nqruHKGCt53G3Q==
+next-sitemap@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.8.tgz#64a8cb11b28e19f74ce777215236e5a8b50d0d13"
+  integrity sha512-dd9NBDk2tpRsUXjCyDh2qkROsKCLHE4AOsuefKxAkOquG5Mbck1Zv+APLiu+eBVrQXvroXrZr6zgU9thzlTowg==
   dependencies:
     "@corex/deepmerge" "^4.0.26"
     minimist "^1.2.6"
@@ -2288,10 +2288,10 @@ npm-bundled@^1.1.1, npm-bundled@^1.1.2:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@^15.0.1:
-  version "15.0.1"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-15.0.1.tgz#2152ae7f6c5ba989602686d144c6574bf986bea5"
-  integrity sha512-sQcWKnylLVeP+Ys0c22uCKwo4RSgirgZ16qZK2qBxd04LYYTO9ZeM3HLZgaO8CLd9NJOYXLZAA2CTLRO3up7qg==
+npm-check-updates@^15.0.2:
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-15.0.2.tgz#ff274346709c68351e20e8b04210296a356249b7"
+  integrity sha512-ZSmNUm2Cl8K7VZBhLY4/AE2NHmZfR4glKoRZIeJrgg5bvFP1LhRBU3tdS+IX1+MLoUvpF2L+Q7oD5QO+nBOm+Q==
   dependencies:
     chalk "^4.1.2"
     cint "^8.2.1"
