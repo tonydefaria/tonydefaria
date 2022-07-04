@@ -37,7 +37,7 @@ export default function MenuComponent() {
     const brand = document.getElementById("brand-logo")
     if (!isOpen) {
       // Remove
-      // body.classList.remove("noscroll")
+      body.classList.remove("noscroll")
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
       // Add
@@ -48,7 +48,7 @@ export default function MenuComponent() {
       icon.classList.remove("link-black")
       brand.classList.remove("link-black")
       // Add
-      // body.classList.add("noscroll")
+      body.classList.add("noscroll")
       icon.classList.add("link-white")
       brand.classList.add("link-white")
     }
@@ -56,7 +56,7 @@ export default function MenuComponent() {
 
   return (
     <>
-      <OutsideClickHandler onOutsideClick={() => { delay(125).then(() => setIsOpen(false)) }}>
+      <OutsideClickHandler onOutsideClick={() => { delay(1000).then(() => setIsOpen(false)) }}>
         <div className="hamburger">
           <ul className="hamburger-box">
             <li className="hamburger-item">

@@ -35,6 +35,11 @@ body {
   overflow-y: scroll;
 }
 
+.noscroll {
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
 ::-moz-selection {
   background-color: $black;
   color: $white;
@@ -116,10 +121,6 @@ svg {
   overflow: hidden;
   padding: 0;
   width: auto;
-}
-
-.noscroll {
-  overflow: hidden;
 }
 
 // Media Query 719px
