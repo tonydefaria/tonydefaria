@@ -14,12 +14,13 @@ $class: "menu";
   overflow: hidden;
   right: 0;
   top: 0;
+  touch-action: none;
   width: 100%;
   z-index: -1;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-web-scrollbar {
-    display: none;
+    display: none !important;
   }
   .#{$class}-box {
     float: left;

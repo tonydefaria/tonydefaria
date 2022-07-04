@@ -32,7 +32,7 @@ export default function Primary({ children }) {
             </div>
           </div>
         </header>
-        <main className="universal main">
+        <main className="universal main" id="main">
           <div className="universal-box">
             <div className="universal-row">
               {children}

@@ -36,6 +36,7 @@ export default function MenuComponent() {
     const body = document.getElementById("body")
     const primary = document.getElementById("primary")
     const gradient = document.getElementById("gradient")
+
     const icon = document.getElementById("brand-icon")
     const brand = document.getElementById("brand-logo")
 
@@ -44,6 +45,7 @@ export default function MenuComponent() {
       body.classList.remove("noscroll")
       primary.classList.remove("noscroll")
       gradient.classList.remove("noscroll")
+
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
       // Add
@@ -57,6 +59,7 @@ export default function MenuComponent() {
       body.classList.add("noscroll")
       primary.classList.add("noscroll")
       gradient.classList.add("noscroll")
+
       icon.classList.add("link-white")
       brand.classList.add("link-white")
     }
