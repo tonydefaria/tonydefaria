@@ -21,9 +21,9 @@ export default function Primary({ children }) {
   }, [])
 
   return (
-    <div className="primary">
+    <div className="primary" id="primary">
       <FaviconComponent project={project} />
-      <div className="gradient">
+      <div className="gradient" id="gradient">
         <header className="universal header">
           <div className="universal-box">
             <div className="universal-row">

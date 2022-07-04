@@ -34,44 +34,47 @@ export default function MenuComponent() {
 
   useEffect(() => {
     const body = document.getElementById("body")
+    const primary = document.getElementById("primary")
+    const gradient = document.getElementById("gradient")
     const icon = document.getElementById("brand-icon")
     const brand = document.getElementById("brand-logo")
+
     if (!isOpen) {
       // Remove
       body.classList.remove("noscroll")
+      primary.classList.remove("noscroll")
+      gradient.classList.remove("noscroll")
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
       // Add
       icon.classList.add("link-black")
       brand.classList.add("link-black")
     } else {
-      setTimeout(function(){
-        // Remove
-        icon.classList.remove("link-black")
-        brand.classList.remove("link-black")
-        // Add
-        body.classList.add("noscroll")
-        icon.classList.add("link-white")
-        brand.classList.add("link-white")
-      }, 250);
+      // Remove
+      icon.classList.remove("link-black")
+      brand.classList.remove("link-black")
+      // Add
+      body.classList.add("noscroll")
+      primary.classList.add("noscroll")
+      gradient.classList.add("noscroll")
+      icon.classList.add("link-white")
+      brand.classList.add("link-white")
     }
   }, [isOpen])
 
   return (
     <>
-      <OutsideClickHandler onOutsideClick={() => { delay(125).then(() => setIsOpen(false)) }}>
-        <div className="hamburger">
-          <ul className="hamburger-box">
-            <li className="hamburger-item">
-              <button className={isOpen ? "link link-white" : "link link-black"} onClick={toggleMenu}>
-                <span className="icon">
-                  {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
-                </span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </OutsideClickHandler>
+      <div className="hamburger">
+        <ul className="hamburger-box">
+          <li className="hamburger-item">
+            <button className={isOpen ? "link link-white" : "link link-black"} onClick={toggleMenu}>
+              <span className="icon">
+                {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
+              </span>
+            </button>
+          </li>
+        </ul>
+      </div>
       <div className={`${isOpen ? "menu fade-in-animation position-fixed" : "menu"} flex-h-center flex-v-center`}>
         <ul className={isOpen ? "menu-box display-block" : "menu-box"}>
           {/*
