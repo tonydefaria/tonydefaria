@@ -36,6 +36,7 @@ export default function MenuComponent() {
     const body = document.getElementById("body")
     const primary = document.getElementById("primary")
     const gradient = document.getElementById("gradient")
+    const menu = document.getElementById("menu")
 
     const icon = document.getElementById("brand-icon")
     const brand = document.getElementById("brand-logo")
@@ -45,6 +46,7 @@ export default function MenuComponent() {
       body.classList.remove("noscroll")
       primary.classList.remove("noscroll")
       gradient.classList.remove("noscroll")
+      menu.classList.remove("noscroll")
 
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
@@ -59,6 +61,7 @@ export default function MenuComponent() {
       body.classList.add("noscroll")
       primary.classList.add("noscroll")
       gradient.classList.add("noscroll")
+      menu.classList.add("menu")
 
       icon.classList.add("link-white")
       brand.classList.add("link-white")
@@ -67,18 +70,20 @@ export default function MenuComponent() {
 
   return (
     <>
-      <div className="hamburger">
-        <ul className="hamburger-box">
-          <li className="hamburger-item">
-            <button className={isOpen ? "link link-white" : "link link-black"} onClick={toggleMenu}>
-              <span className="icon">
-                {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
-              </span>
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div className={`${isOpen ? "menu fade-in-animation position-fixed" : "menu"} flex-h-center flex-v-center`}>
+      <OutsideClickHandler onOutsideClick={() => { delay(125).then(() => setIsOpen(false)) }}>
+        <div className="hamburger">
+          <ul className="hamburger-box">
+            <li className="hamburger-item">
+              <button className={isOpen ? "link link-white" : "link link-black"} onClick={toggleMenu}>
+                <span className="icon">
+                  {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </OutsideClickHandler>
+      <div className={`${isOpen ? "menu fade-in-animation position-fixed" : "menu"} flex-h-center flex-v-center`} id="menu">
         <ul className={isOpen ? "menu-box display-block" : "menu-box"}>
           {/*
             <li className="menu-item">
