@@ -35,9 +35,15 @@ body {
   overflow-y: scroll;
 }
 
+.noscroll::-webkit-scrollbar {
+  display: none !important;
+}
+
 .noscroll {
   max-height: 100vh !important;
   overflow: hidden !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 
 ::-moz-selection {

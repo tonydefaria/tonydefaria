@@ -45,13 +45,15 @@ export default function MenuComponent() {
       icon.classList.add("link-black")
       brand.classList.add("link-black")
     } else {
-      // Remove
-      icon.classList.remove("link-black")
-      brand.classList.remove("link-black")
-      // Add
-      body.classList.add("noscroll")
-      icon.classList.add("link-white")
-      brand.classList.add("link-white")
+      setTimeout(function(){
+        // Remove
+        icon.classList.remove("link-black")
+        brand.classList.remove("link-black")
+        // Add
+        body.classList.add("noscroll")
+        icon.classList.add("link-white")
+        brand.classList.add("link-white")
+      }, 250);
     }
   }, [isOpen])
 

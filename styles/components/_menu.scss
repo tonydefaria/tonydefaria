@@ -5,7 +5,7 @@
 $class: "menu";
 
 .#{$class} {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
   background-color: rgba(10, 10, 10, .95);
   bottom: 0;
   float: left;
@@ -16,10 +16,16 @@ $class: "menu";
   top: 0;
   width: 100%;
   z-index: -1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-web-scrollbar {
+    display: none;
+  }
   .#{$class}-box {
     float: left;
     display: none;
     list-style: none;
+    overflow: hidden;
     width: 320px;
     .#{$class}-item {
       float: left;
