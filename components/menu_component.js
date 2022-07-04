@@ -29,6 +29,7 @@ export default function MenuComponent() {
   // Toggle Menu
   const toggleMenu = () => {
     setIsOpen(!isOpen)
+    window.scrollTo({top: 0, left: 0})
   }
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export default function MenuComponent() {
 
   return (
     <>
-      <OutsideClickHandler onOutsideClick={() => { delay(1000).then(() => setIsOpen(false)) }}>
+      <OutsideClickHandler onOutsideClick={() => { delay(125).then(() => setIsOpen(false)) }}>
         <div className="hamburger">
           <ul className="hamburger-box">
             <li className="hamburger-item">

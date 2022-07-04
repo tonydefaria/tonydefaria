@@ -81,7 +81,7 @@
 // Classes
 // -------------------------------------------------------------
 .hover-animation            { @include hover-animation(.3s); }
-.fade-in-animation          { @include fade-in-animation(.3s); }
+.fade-in-animation          { @include fade-in-animation(.15s); }
 .fade-out-animation         { @include fade-out-animation(.3s); }
 .expandable-up-animation    { @include expandable-up-animation(1s); }
 .expandable-down-animation  { @include expandable-down-animation(1s); }
