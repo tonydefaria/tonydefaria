@@ -11,10 +11,10 @@ import CloseIcon from "../svgs/close"
 
 export default function MenuComponent() {
   // Cabin Events
-  const trackMenuPortraitsCabin = (event) => {
+  const trackMenuPortraitsCabin = () => {
     window.cabin.event("Menu Portraits")
   }
-  const trackMenuContactCabin = (event) => {
+  const trackMenuContactCabin = () => {
     window.cabin.event("Menu Contact")
   }
 
@@ -29,7 +29,7 @@ export default function MenuComponent() {
   // Toggle Menu
   const toggleMenu = () => {
     setIsOpen(!isOpen)
-    window.scrollTo({top: 0, left: 0})
+    window.scrollTo({top: 0, left: 0, right: 0})
   }
 
   useEffect(() => {
@@ -83,7 +83,7 @@ export default function MenuComponent() {
           </ul>
         </div>
       </OutsideClickHandler>
-      <div className={`${isOpen ? "menu fade-in-animation position-fixed" : "menu"} flex-h-center flex-v-center`} id="menu">
+      <div className={`${isOpen ? "menu position-fixed" : "menu"} flex-h-center flex-v-center`} id="menu">
         <ul className={isOpen ? "menu-box display-block" : "menu-box"}>
           {/*
             <li className="menu-item">
