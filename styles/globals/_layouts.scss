@@ -33,7 +33,7 @@
   // border-right: 16px solid $black;
   // border-top: 16px solid $black;
   background-color: $gray-100;
-  padding: 16px 0 0;
+  padding: 0;
   position: fixed;
   z-index: 99999;
 }
@@ -42,7 +42,7 @@
   // border-left: 16px solid $black;
   // border-right: 16px solid $black;
   min-height: calc(100vh - 150px);
-  padding: 168px 0 64px;
+  padding: 152px 0 64px;
   .top {
     float: left;
     width: 100%;
@@ -105,9 +105,6 @@
 // Media Query 719px
 // -------------------------------------------------------------
 @media #{$mobile} {
-  .header {
-    padding: 0;
-  }
   .main {
     min-height: calc(100vh - 134px);
     padding: 88px 0 0;
