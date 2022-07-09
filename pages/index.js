@@ -48,7 +48,7 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
 
       <style>{`
         .header {
-          backdrop-filter: blur(0);
+          backdrop-filter: none;
           background-color: rgba(245, 245, 245, 1);
         }
         .primary {
