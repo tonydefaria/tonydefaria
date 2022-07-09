@@ -44,6 +44,7 @@ body {
   overflow: hidden !important;
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
+  touch-action: none !important;
 }
 
 ::-moz-selection {
@@ -70,24 +71,12 @@ button,
 }
 
 figure {
-  background-color: $gray-100;
-  border: 0;
-  border-radius: 3px;
-  display: block;
-  float: left;
+	display: block;
   margin: 0;
   padding: 0;
-  .figwrapper {
-    border-radius: 3px;
-    float: left;
-    min-width: 100%;
-    width: 100%;
-    img {
-      border-radius: 3px;
-      height: auto;
-      min-width: 100%;
-      object-fit: cover;
-    }
+  img {
+    display: flex;
+    object-fit: cover;
   }
   figcaption {
     @include font-size-xxs;
@@ -98,17 +87,11 @@ figure {
     margin: 0;
     vertical-align: bottom;
     width: auto;
-    span {
-      float: left;
-      margin: 0;
-      padding: 0;
-    }
   }
 }
 
 img {
   border: 0;
-  display: flex;
   margin: 0;
   max-height: 100%;
   max-width: 100%;
@@ -132,9 +115,6 @@ svg {
 // Media Query 719px
 // -------------------------------------------------------------
 @media #{$mobile} {
-  .noscroll {
-    touch-action: none !important;
-  }
 }
 
 // Media Query 720px

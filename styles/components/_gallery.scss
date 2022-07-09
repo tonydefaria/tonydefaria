@@ -6,13 +6,14 @@ $class: "gallery";
 
 .#{$class} {
   float: left;
-  margin: 64px 0 0;
+  margin: 128px 0 0;
   width: 100%;
   .#{$class}-box {
     float: left;
     width: 100%;
     // .#{$class}-row {}
     .#{$class}-item {
+      // background-color: red;
       float: left;
       padding: 96px 32px;
       width: 100%;
@@ -23,9 +24,8 @@ $class: "gallery";
         padding: 96px 32px 0;
       }
       figure {
-        max-height: calc(100vh - 232px);
         img {
-          max-height: calc(100vh - 264px);
+          max-height: 720px;
         }
       }
     }
@@ -36,6 +36,7 @@ $class: "gallery";
 // -------------------------------------------------------------
 @media #{$mobile} {
   .#{$class} {
+    margin: 64px 0 0;
     .#{$class}-box {
       // .#{$class}-row {}
       .#{$class}-item {
@@ -46,6 +47,11 @@ $class: "gallery";
         &:last-child {
           padding: 64px 32px 16px;
         }
+        figure {
+          img {
+            max-height: 400px;
+          }
+        }
       }
     }
   }
@@ -53,29 +59,39 @@ $class: "gallery";
 
 // Media Query 720px
 // -------------------------------------------------------------
-// @media #{$m} {
-//   .#{$class} {
-//     .#{$class}-box {
-//       .#{$class}-row {
-//       }
-//       .#{$class}-item {
-//       }
-//     }
-//   }
-// }
+@media #{$m} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+        figure {
+          img {
+            max-height: 560px;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Media Query 960px
 // -------------------------------------------------------------
-// @media #{$l} {
-//   .#{$class} {
-//     .#{$class}-box {
-//       .#{$class}-row {
-//       }
-//       .#{$class}-item {
-//       }
-//     }
-//   }
-// }
+@media #{$l} {
+  .#{$class} {
+    .#{$class}-box {
+      .#{$class}-row {
+      }
+      .#{$class}-item {
+        figure {
+          img {
+            max-height: 640px;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Media Query 1440px
 // -------------------------------------------------------------
