@@ -57,6 +57,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
 
       <style>{`
         .header {
+          -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
         }
       `}

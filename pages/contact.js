@@ -45,6 +45,7 @@ export default function Contact({hankyoProject, hankyoSection, meta}) {
 
       <style>{`
         .header {
+          -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
         }
       `}
