@@ -43,6 +43,12 @@ export default function Contact({hankyoProject, hankyoSection, meta}) {
         </div>
       </div>
 
+      <style>{`
+        .header {
+          backdrop-filter: blur(4px);
+        }
+      `}
+      </style>
     </motion.div>
   )
 }

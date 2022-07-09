@@ -58,7 +58,6 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
           background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%);
         }
         .header {
-          backdrop-filter: none !important;
           background-color: rgba(245, 245, 245, 0);
         }
         .copyright-row p {
