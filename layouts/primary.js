@@ -16,9 +16,9 @@ export default function Primary({ children }) {
   const social_networks = project.social_networks
 
   // Hooks
-  useEffect(() => {
-    console.log("NextJS Loaded")
-  }, [])
+  // useEffect(() => {
+  //   console.log("NextJS Loaded")
+  // }, [])
 
   return (
     <div className="primary" id="primary">

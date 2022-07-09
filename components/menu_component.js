@@ -33,6 +33,9 @@ export default function MenuComponent() {
   }
 
   useEffect(() => {
+    // let menuHeight = document.querySelector(".menu");
+    // let bodyHeight = menuHeight.offsetHeight;
+
     const body = document.getElementById("body")
     const primary = document.getElementById("primary")
     const gradient = document.getElementById("gradient")
@@ -58,10 +61,11 @@ export default function MenuComponent() {
       icon.classList.remove("link-black")
       brand.classList.remove("link-black")
       // Add
+      // body.style.height = bodyHeight
       body.classList.add("noscroll")
       primary.classList.add("noscroll")
       gradient.classList.add("noscroll")
-      menu.classList.add("menu")
+      menu.classList.add("noscroll")
 
       icon.classList.add("link-white")
       brand.classList.add("link-white")
