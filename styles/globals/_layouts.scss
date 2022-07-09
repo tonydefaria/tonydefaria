@@ -29,10 +29,8 @@
 }
 
 .header {
-  // border-left: 16px solid $black;
-  // border-right: 16px solid $black;
-  // border-top: 16px solid $black;
-  background-color: $gray-100;
+  backdrop-filter: blur(4px);
+  background-color: rgba(245, 245, 245, .95);
   padding: 0;
   position: fixed;
   z-index: 99999;

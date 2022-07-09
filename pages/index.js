@@ -4,7 +4,7 @@
 import Primary from "../layouts/primary"
 
 // Built-in Components
-import Link from "next/link"
+import Head from "next/head"
 import { motion } from "framer-motion"
 
 // Components
@@ -18,11 +18,14 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       exit={{opacity: 0}}
-      transition={{opacity: {duration: 0.25}}}
+      transition={{opacity: {duration: 1}}}
       className="page"
     >
       {/* Meta */}
       <MetaComponent hankyoProject={hankyoProject} meta={meta} />
+      <Head>
+        <link rel="preload" as="image" href={hero.image} />
+      </Head>
 
       {/* Hero */}
       <div className="hero">
