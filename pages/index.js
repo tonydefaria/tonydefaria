@@ -47,6 +47,10 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       </div>
 
       <style>{`
+        .header {
+          backdrop-filter: blur(0);
+          background-color: rgba(245, 245, 245, 1);
+        }
         .primary {
           background-image: url(${hero.image});
           background-position: bottom right;
