@@ -47,10 +47,6 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       </div>
 
       <style>{`
-        .header {
-          backdrop-filter: none;
-          background-color: rgba(245, 245, 245, 1);
-        }
         .primary {
           background-image: url(${hero.image});
           background-position: bottom right;
@@ -62,7 +58,8 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
           background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%);
         }
         .header {
-          background-color: rgba(250, 250, 250, 0);
+          backdrop-filter: none !important;
+          background-color: rgba(245, 245, 245, 0);
         }
         .copyright-row p {
           color: white;
