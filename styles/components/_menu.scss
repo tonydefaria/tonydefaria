@@ -5,23 +5,17 @@
 $class: "menu";
 
 .#{$class} {
-  backdrop-filter: blur(4px);
-  background-color: rgba(10, 10, 10, .95);
-  bottom: 256px;
+  // backdrop-filter: blur(4px);
+  background-color: $black;
+  bottom: 0;
   float: left;
   left: 0;
-  // opacity: 0;
   overflow: hidden;
   right: 0;
   top: 0;
   touch-action: none;
   width: 100%;
   z-index: -1;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  &::-web-scrollbar {
-    display: none !important;
-  }
   .#{$class}-box {
     float: left;
     display: none;
@@ -32,6 +26,15 @@ $class: "menu";
       float: left;
       width: 100%;
     }
+  }
+  &.open {
+    height: 100vh;
+    position: fixed;
+  }
+  &.closed {
+    display: none;
+    height: 0vh;
+    visibility: hidden;
   }
 }
 

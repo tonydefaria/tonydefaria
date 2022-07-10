@@ -6,7 +6,7 @@ import Image from "next/future/image"
 
 export default function SocialNetworksPrimaryComponent({social_networks}) {
   // Cabin Events
-  const trackSocialNetworkCabin = (event) => {
+  const trackSocialNetworkCabin = () => {
     window.cabin.event("Social Network Primary")
   }
 

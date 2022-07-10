@@ -33,13 +33,9 @@ export default function MenuComponent() {
   }
 
   useEffect(() => {
-    // let menuHeight = document.querySelector(".menu");
-    // let bodyHeight = menuHeight.offsetHeight;
-
     const body = document.getElementById("body")
     const primary = document.getElementById("primary")
     const gradient = document.getElementById("gradient")
-    const menu = document.getElementById("menu")
 
     const icon = document.getElementById("brand-icon")
     const brand = document.getElementById("brand-logo")
@@ -49,7 +45,6 @@ export default function MenuComponent() {
       body.classList.remove("noscroll")
       primary.classList.remove("noscroll")
       gradient.classList.remove("noscroll")
-      menu.classList.remove("noscroll")
 
       icon.classList.remove("link-white")
       brand.classList.remove("link-white")
@@ -61,11 +56,9 @@ export default function MenuComponent() {
       icon.classList.remove("link-black")
       brand.classList.remove("link-black")
       // Add
-      // body.style.height = bodyHeight
       body.classList.add("noscroll")
       primary.classList.add("noscroll")
       gradient.classList.add("noscroll")
-      menu.classList.add("noscroll")
 
       icon.classList.add("link-white")
       brand.classList.add("link-white")
@@ -87,16 +80,8 @@ export default function MenuComponent() {
           </ul>
         </div>
       </OutsideClickHandler>
-      <div className={`${isOpen ? "menu position-fixed" : "menu"} flex-h-center flex-v-center`} id="menu">
+      <div className={`${isOpen ? "menu open" : "menu closed"} flex-h-center flex-v-center`} id="menu">
         <ul className={isOpen ? "menu-box display-block" : "menu-box"}>
-          {/*
-            <li className="menu-item">
-              <Link href="/stories"><a className="link-l link-white text-align-center text-transform-uppercase width-wide">Stories</a></Link>
-            </li>
-            <li className="menu-item">
-              <Link href="/street-and-travel"><a className="link-l link-white text-align-center text-transform-uppercase width-wide">Street & Travel</a></Link>
-            </li>
-          */}
           <li className="menu-item">
             <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
           </li>

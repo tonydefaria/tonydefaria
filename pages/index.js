@@ -5,6 +5,8 @@ import Primary from "../layouts/primary"
 
 // Built-in Components
 import Head from "next/head"
+// import Image from "next/image"
+import Image from "next/future/image"
 import { motion } from "framer-motion"
 
 // Components
@@ -30,38 +32,22 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       {/* Hero */}
       <div className="hero">
         <div className="hero-box">
+          <div className="hero-row width-wide">
+            <figure>
+              <Image src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Hero Image" title="Tony de Faria" className="hero-image" />
+            </figure>
+          </div>
+          <hr className="hero-separator" />
           <div className="hero-row">
             <h1 className="header-size-xxl">{hero.title}</h1>
             <hr className="hero-separator" />
             <p className="font-size-m">{hero.description}</p>
-            {/*
-              <hr className="hero-separator" />
-              <Link href="/portraits">
-                <a className="button-s button-white">
-                  Go to Portraits
-                </a>
-              </Link>
-            */}
           </div>
         </div>
       </div>
-
       <style>{`
-        .primary {
-          background-image: url(${hero.image});
-          background-position: bottom right;
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        .gradient {
-          background: rgb(0,0,0);
-          background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 15%);
-        }
-        .header {
-          background-color: rgba(245, 245, 245, 0);
-        }
-        .copyright-row p {
-          color: white;
+        .main {
+          padding: 88px 0 64px;
         }
       `}
       </style>

@@ -2,7 +2,7 @@
 
 export default function SocialNetworksSecondaryComponent({social_networks}) {
   // Cabin Events
-  const trackSocialNetworkCabin = (event) => {
+  const trackSocialNetworkCabin = () => {
     window.cabin.event("Social Network Secondary")
   }
 

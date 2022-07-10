@@ -7,13 +7,6 @@ $class: "hero";
 .#{$class} {
   float: left;
   width: 100%;
-  overflow: -moz-scrollbars-none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    width: 0 !important;
-    display: none;
-  }
   .#{$class}-box {
     float: left;
     padding: 16px;
@@ -30,6 +23,9 @@ $class: "hero";
       margin: 16px 0;
       width: 100%;
     }
+  }
+  .#{$class}-image {
+    width: 100%;
   }
 }
 
