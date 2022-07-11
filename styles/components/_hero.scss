@@ -30,8 +30,8 @@ $class: "hero";
       float: left;
       width: 100%;
       p {
-        @include font-size-l;
-        margin: 0 0 48px;
+        @include font-size-m;
+        margin: 0 0 40px;
         &:last-child { margin-bottom: 0 !important; }
       }
     }
@@ -53,6 +53,12 @@ $class: "hero";
         margin: 24px 0;
         &.sm {
           margin: 8px 0;
+        }
+      }
+      .#{$class}-writer {
+        p {
+          margin: 0 0 32px;
+          &:last-child { margin-bottom: 0 !important; }
         }
       }
     }
