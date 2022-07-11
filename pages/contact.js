@@ -36,7 +36,7 @@ export default function Contact({hankyoProject, hankyoSection, meta}) {
             <hr className="hero-separator" />
             <p className="font-size-xs">My email:</p>
             <p className="font-size-m font-weight-900">{global_email.value}</p>
-            <hr className="hero-separator" />
+            <hr className="hero-separator sm" />
             <p className="font-size-xs">Follow me on:</p>
             <SocialNetworksSecondaryComponent social_networks={social_networks} />
           </div>

@@ -20,8 +20,20 @@ $class: "hero";
       border: none;
       float: left;
       height: 0px;
-      margin: 16px 0;
+      margin: 32px 0;
       width: 100%;
+      &.sm {
+        margin: 16px 0;
+      }
+    }
+    .#{$class}-writer {
+      float: left;
+      width: 100%;
+      p {
+        @include font-size-l;
+        margin: 0 0 48px;
+        &:last-child { margin-bottom: 0 !important; }
+      }
     }
   }
   .#{$class}-image {
@@ -38,7 +50,10 @@ $class: "hero";
         width: 100%;
       }
       .#{$class}-separator {
-        margin: 8px 0;
+        margin: 24px 0;
+        &.sm {
+          margin: 8px 0;
+        }
       }
     }
   }

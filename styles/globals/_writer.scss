@@ -3,6 +3,9 @@
 // -------------------------------------------------------------
 
 .writer {
+  float: left;
+  width: 100%;
+
   h1 { @include header-size-xxl; margin: 15px 0 30px !important; }
   h2 { @include header-size-xl; margin: 11px 0 22px !important; }
   h3 { @include header-size-l; margin: 9px 0 18px !important; }
@@ -24,7 +27,7 @@
 
   ol,
   ul {
-    @include header-size-m;
+    @include font-size-m;
     padding: 24px 0 !important;
     margin: 0 0 40px !important;
   }

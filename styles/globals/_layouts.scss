@@ -40,8 +40,8 @@
 .main {
   // border-left: 16px solid $black;
   // border-right: 16px solid $black;
-  min-height: calc(100vh - 150px);
-  padding: 152px 0 64px;
+  // min-height: calc(100vh - 150px);
+  padding: 152px 0;
   .top {
     float: left;
     width: 100%;
@@ -105,8 +105,8 @@
 // -------------------------------------------------------------
 @media #{$mobile} {
   .main {
-    min-height: calc(100vh - 118px);
-    padding: 88px 0 0;
+    min-height: calc(100vh - 206px);
+    padding: 88px 0;
   }
   .footer {
     padding: 16px 0;
