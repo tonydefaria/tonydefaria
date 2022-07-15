@@ -15,8 +15,11 @@ $class: "hamburger";
     .#{$class}-item {
       float: left;
       margin: 0;
-      padding: 16px;
       width: auto;
+      .link {
+        box-sizing: content-box;
+        padding: 16px;
+      }
       svg {
         float: left;
         height: 24px;

@@ -11,10 +11,12 @@ $class: "brand";
     float: left;
     .#{$class}-item {
       float: left;
-      padding: 16px;
+      // padding: 16px;
       &.#{$class}-icon {
         .link {
+          box-sizing: content-box;
           height: 24px;
+          padding: 16px;
           width: 23.09px;
           .icon {
             height: inherit;
@@ -24,7 +26,9 @@ $class: "brand";
       }
       &.#{$class}-logo {
         .link {
+          box-sizing: content-box;
           height: 24px;
+          padding: 16px;
           width: 152.02px;
           .icon {
             height: inherit;
