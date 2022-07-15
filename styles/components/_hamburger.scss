@@ -31,7 +31,7 @@ $class: "hamburger";
 // -------------------------------------------------------------
 @media #{$mobile} {
   .#{$class} {
-    padding: 0 16px;
+    padding: 4px 16px;
     .#{$class}-box {
       .#{$class}-item {
       }
