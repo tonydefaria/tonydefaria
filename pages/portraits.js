@@ -5,7 +5,6 @@ import Primary from "../layouts/primary"
 
 // Built-in Components
 import Image from "next/future/image"
-import { motion } from "framer-motion"
 
 // Components
 import MetaComponent from "../components/meta_component"
@@ -36,20 +35,36 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
       {/* Gallery */}
       <div className="gallery">
         <div className="gallery-box">
-          {images.map((image) => (
-            <div key={image.uid} className="gallery-item flex-h-center">
+          {images.map((image, index) => {
+            let setPriority
+            if (index <= 2) {
+              setPriority = true
+            } else {
+              setPriority = false
+            }
 
-              {/* Image Alignment */}
-              {/* <div className="float-left flex-h-center width-wide"></div> */}
+            let setAlignment
+            if (image.align === "left") {
+              setAlignment = "float-left"
+            } else if (image.align === "center") {
+              setAlignment = "float-left flex-h-center width-wide"
+            } else if (image.align === "right") {
+              setAlignment = "float-right"
+            }
 
-              <figure>
-                <Image src={image.image} width={image.width} height={image.height} quality={60} alt="Tony de Faria - Portraits - Gallery Image" title="Tony de Faria" />
-                <figcaption>
-                  {image.caption}
-                </figcaption>
-              </figure>
-            </div>
-          ))}
+            return (
+              <div key={image.uid} className="gallery-item">
+                <div className={setAlignment}>
+                  <figure>
+                    <Image src={image.image} width={image.width} height={image.height} quality={60} alt="Tony de Faria - Portraits - Gallery Image" title="Tony de Faria" priority={setPriority} />
+                    <figcaption>
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
