@@ -15,7 +15,7 @@ export default function MenuComponent() {
   const toggleMenu = () => {
     setTimeout(function() {
       setIsOpen(false)
-    }, 500)
+    }, 250)
     window.scrollTo({top: 0, left: 0, right: 0})
   }
 
