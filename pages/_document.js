@@ -5,6 +5,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document"
 import Script from "next/script"
 
 class MyDocument extends Document {
+  // Initial Props
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
@@ -20,7 +21,7 @@ class MyDocument extends Document {
             strategy="beforeInteractive"
           />
         </Head>
-        <body id="body">
+        <body className="scroll" id="body">
           <Main />
           <NextScript />
         </body>

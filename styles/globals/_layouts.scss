@@ -34,12 +34,10 @@
   background-color: rgba(245, 245, 245, .95);
   padding: 0;
   position: fixed;
-  z-index: 99999;
+  z-index: 1;
 }
 
 .main {
-  // border-left: 16px solid $black;
-  // border-right: 16px solid $black;
   min-height: calc(100vh - 150px);
   padding: 152px 0;
   .top {
@@ -57,49 +55,8 @@
 }
 
 .footer {
-  // border-bottom: 16px solid $black;
-  // border-left: 16px solid $black;
-  // border-right: 16px solid $black;
-  // min-height: 56px;
   padding: 32px 0;
 }
-
-// .frame {
-//   background-color: $black;
-//   position: fixed;
-//   z-index: 999999;
-// }
-
-// .frame-bottom,
-// .frame-top {
-//   height: 16px;
-//   left: 0;
-//   right: 0;
-// }
-
-// .frame-bottom {
-//   bottom: 0;
-// }
-
-// .frame-top {
-//   top: 0;
-// }
-
-// .frame-left,
-// .frame-right {
-//   bottom: 16px;
-//   height: calc(100vh - 32px);
-//   top: 16px;
-//   width: 16px;
-// }
-
-// .frame-left {
-//   left: 0;
-// }
-
-// .frame-right {
-//   right: 0;
-// }
 
 // Media Query 719px
 // -------------------------------------------------------------

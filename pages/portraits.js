@@ -4,7 +4,6 @@
 import Primary from "../layouts/primary"
 
 // Built-in Components
-// import Image from "next/image"
 import Image from "next/future/image"
 import { motion } from "framer-motion"
 
@@ -12,6 +11,7 @@ import { motion } from "framer-motion"
 import MetaComponent from "../components/meta_component"
 
 export default function Portraits({hankyoProject, hankyoSection, meta}) {
+  // Props
   const hero = hankyoSection.section.blocks.find(({uid}) => uid === "sHhk1Za3CSKpThi2X8eYDo1z")
   const images = hankyoSection.section.blocks.filter(image => image.type_of === "image")
 

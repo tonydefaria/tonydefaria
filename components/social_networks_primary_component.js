@@ -1,14 +1,11 @@
 // Social Networks Primary Component
 
 // Built-in Components
-// import Image from "next/image"
 import Image from "next/future/image"
 
 export default function SocialNetworksPrimaryComponent({social_networks}) {
   // Cabin Events
-  const trackSocialNetworkCabin = () => {
-    window.cabin.event("Social Network Primary")
-  }
+  const trackSocialNetworkCabin = () => { window.cabin.event("Social Network Primary") }
 
   return (
     <div className="social-networks-primary">

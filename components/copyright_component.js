@@ -4,7 +4,7 @@
 import React, { useEffect } from "react"
 
 export default function Copyright() {
-
+  // Effect
   useEffect(() => {
     var date = new Date()
     var fullYear = date.getFullYear()

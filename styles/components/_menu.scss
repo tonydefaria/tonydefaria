@@ -5,22 +5,23 @@
 $class: "menu";
 
 .#{$class} {
-  // backdrop-filter: blur(4px);
   background-color: $black;
   bottom: 0;
+  display: none;
   float: left;
+  height: 100vh;
   left: 0;
   overflow: hidden;
+  position: fixed;
   right: 0;
   top: 0;
   touch-action: none;
   width: 100%;
+  visibility: hidden;
   z-index: -1;
   .#{$class}-box {
     float: left;
-    display: none;
     list-style: none;
-    overflow: hidden;
     width: 320px;
     .#{$class}-item {
       float: left;
@@ -28,12 +29,13 @@ $class: "menu";
     }
   }
   &.open {
+    display: block;
     height: 100vh;
-    position: fixed;
+    visibility: visible;
   }
   &.closed {
     display: none;
-    height: 0vh;
+    height: 100vh;
     visibility: hidden;
   }
 }

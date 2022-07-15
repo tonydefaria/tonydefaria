@@ -1,95 +1,36 @@
 // Menu Component
 
 // Built-in components
-import React, { useState, useEffect } from "react"
+import React, { useContext } from "react"
 import Link from "next/link"
-import OutsideClickHandler from "react-outside-click-handler";
 
-// SVGs
-import HamburgerIcon from "../svgs/hamburger"
-import CloseIcon from "../svgs/close"
+// Components
+import { menuToggleContext } from "../components/header_component"
 
 export default function MenuComponent() {
-  // Cabin Events
-  const trackMenuPortraitsCabin = () => {
-    window.cabin.event("Menu Portraits")
-  }
-  const trackMenuContactCabin = () => {
-    window.cabin.event("Menu Contact")
-  }
-
-  // Menu overlay
-  const [isOpen, setIsOpen] = useState(false)
-
-  // Delay
-  const delay = (time) => {
-    return new Promise(resolve => setTimeout(resolve, time));
-  }
+  // Context
+  const [isOpen, setIsOpen] = useContext(menuToggleContext)
 
   // Toggle Menu
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(false)
     window.scrollTo({top: 0, left: 0, right: 0})
   }
 
-  useEffect(() => {
-    const body = document.getElementById("body")
-    const primary = document.getElementById("primary")
-    const gradient = document.getElementById("gradient")
-
-    const icon = document.getElementById("brand-icon")
-    const brand = document.getElementById("brand-logo")
-
-    if (!isOpen) {
-      // Remove
-      body.classList.remove("noscroll")
-      primary.classList.remove("noscroll")
-      gradient.classList.remove("noscroll")
-
-      icon.classList.remove("link-white")
-      brand.classList.remove("link-white")
-      // Add
-      icon.classList.add("link-black")
-      brand.classList.add("link-black")
-    } else {
-      // Remove
-      icon.classList.remove("link-black")
-      brand.classList.remove("link-black")
-      // Add
-      body.classList.add("noscroll")
-      primary.classList.add("noscroll")
-      gradient.classList.add("noscroll")
-
-      icon.classList.add("link-white")
-      brand.classList.add("link-white")
-    }
-  }, [isOpen])
+  // Cabin Events
+  const trackMenuPortraitsCabin = () => { window.cabin.event("Menu Portraits") }
+  const trackMenuContactCabin = () => { window.cabin.event("Menu Contact") }
 
   return (
-    <>
-      <OutsideClickHandler onOutsideClick={() => { delay(125).then(() => setIsOpen(false)) }}>
-        <div className="hamburger">
-          <ul className="hamburger-box">
-            <li className="hamburger-item">
-              <button className={isOpen ? "link link-white" : "link link-black"} onClick={toggleMenu}>
-                <span className="icon">
-                  {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
-                </span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </OutsideClickHandler>
-      <div className={`${isOpen ? "menu open" : "menu closed"} flex-h-center flex-v-center`} id="menu">
-        <ul className={isOpen ? "menu-box display-block" : "menu-box"}>
-          <li className="menu-item">
-            <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
-          </li>
-          <li className="menu-item">
-            <Link href="/contact"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
-          </li>
-        </ul>
-      </div>
-    </>
+    <div className={`menu flex-h-center flex-v-center ${isOpen ? "open" : "closed"}`} id="menu">
+      <ul className="menu-box">
+        <li className="menu-item">
+          <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+        </li>
+        <li className="menu-item">
+          <Link href="/contact"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+        </li>
+      </ul>
+    </div>
   )
 }

@@ -9,8 +9,10 @@ import smoothscroll from "smoothscroll-polyfill"
 import "../styles/composer.scss"
 
 export default function MyApp({ Component, pageProps}) {
+  // Layout
   const Layout = Component.Layout ? Component.Layout : React.Fragment
 
+  // Effect
   useEffect(() => {
     smoothscroll.polyfill();
     // Prevent from saving images.

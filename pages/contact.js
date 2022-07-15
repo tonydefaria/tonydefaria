@@ -11,6 +11,7 @@ import MetaComponent from "../components/meta_component"
 import SocialNetworksSecondaryComponent from "../components/social_networks_secondary_component"
 
 export default function Contact({hankyoProject, hankyoSection, meta}) {
+  // Props
   const hero = hankyoSection.section.blocks.find(({uid}) => uid === "97jSqZqqUvzZmFeZH3rPXSa3")
   const global_email = hankyoProject.project.global_attributes.find(({name}) => name === "email")
   const social_networks = hankyoProject.project.social_networks
