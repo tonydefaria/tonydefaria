@@ -19,7 +19,7 @@ export default function BrandComponent() {
   const toggleMenu = () => {
     setTimeout(function() {
       setIsOpen(false)
-    }, 250)
+    }, 500)
     window.scrollTo({top: 0, left: 0, right: 0})
   }
 
@@ -32,7 +32,7 @@ export default function BrandComponent() {
       <div className="brand-box">
         <div className="brand-item brand-logo desktop">
           <Link href="/">
-            <a className={`link ${isOpen ? "link-white" : "link-black"}`} id="brand-logo" onClick={() => { toggleMenu(); trackBrandDesktopCabin();}}>
+            <a className="link link-black" id="brand-logo" onClick={() => { toggleMenu(); trackBrandDesktopCabin();}}>
               <span className="icon">
                 <BrandLogo />
               </span>
@@ -41,7 +41,7 @@ export default function BrandComponent() {
         </div>
         <div className="brand-item brand-icon mobile">
           <Link href="/">
-            <a className={`link ${isOpen ? "link-white" : "link-black"}`} id="brand-icon"  onClick={() => { toggleMenu(); trackBrandMobileCabin();}}>
+            <a className="link link-black" id="brand-icon" onClick={() => { toggleMenu(); trackBrandMobileCabin();}}>
               <span className="icon">
                 <BrandIcon />
               </span>

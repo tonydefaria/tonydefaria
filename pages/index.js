@@ -6,7 +6,7 @@ import Primary from "../layouts/primary"
 // Built-in Components
 import Head from "next/head"
 import Image from "next/future/image"
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
 
 // Components
 import MetaComponent from "../components/meta_component"
@@ -16,13 +16,7 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
   const hero = hankyoSection.section.blocks.find(({uid}) => uid === "wqq2dxdWkWsqRwjWAbiCEpbx")
 
   return (
-    <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
-      transition={{opacity: {duration: .25}}}
-      className="page"
-    >
+    <div className="page">
       {/* Meta */}
       <MetaComponent hankyoProject={hankyoProject} meta={meta} />
       <Head>
@@ -34,7 +28,7 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
         <div className="hero-box">
           <div className="hero-row width-wide">
             <figure>
-              <Image src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Hero Image" title="Tony de Faria" className="hero-image" />
+              <Image priority="true" src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Hero Image" title="Tony de Faria" className="hero-image" />
             </figure>
           </div>
           <hr className="hero-separator sm" />
@@ -51,12 +45,12 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
         }
         @media (max-width: 719px) {
           .main {
-            padding-top: 56px;
+            padding-top: 64px;
           }
         }
       `}
       </style>
-    </motion.div>
+    </div>
   )
 }
 

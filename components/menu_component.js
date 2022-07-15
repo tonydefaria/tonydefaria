@@ -13,7 +13,9 @@ export default function MenuComponent() {
 
   // Toggle Menu
   const toggleMenu = () => {
-    setIsOpen(false)
+    setTimeout(function() {
+      setIsOpen(false)
+    }, 500)
     window.scrollTo({top: 0, left: 0, right: 0})
   }
 
@@ -25,10 +27,10 @@ export default function MenuComponent() {
     <div className={`menu flex-h-center flex-v-center ${isOpen ? "open" : "closed"}`} id="menu">
       <ul className="menu-box">
         <li className="menu-item">
-          <Link href="/portraits"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+          <Link href="/portraits"><a className="link-m link-black text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
         </li>
         <li className="menu-item">
-          <Link href="/contact"><a className="link-m link-white text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+          <Link href="/contact"><a className="link-m link-black text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
         </li>
       </ul>
     </div>

@@ -16,13 +16,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
   const images = hankyoSection.section.blocks.filter(image => image.type_of === "image")
 
   return (
-    <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
-      transition={{opacity: {duration: .25}}}
-      className="page"
-    >
+    <div className="page">
       {/* Meta */}
       <MetaComponent hankyoProject={hankyoProject} meta={meta} />
 
@@ -54,7 +48,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

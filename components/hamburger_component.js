@@ -24,7 +24,7 @@ export default function MenuComponent() {
     <div className="hamburger">
       <ul className="hamburger-box">
         <li className="hamburger-item">
-          <button className={`link ${isOpen ? "link-white" : "link-black"}`} onClick={toggleMenu}>
+          <button className="link link-black" onClick={toggleMenu}>
             <span className="icon">
               {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
             </span>

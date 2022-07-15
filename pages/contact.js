@@ -17,13 +17,7 @@ export default function Contact({hankyoProject, hankyoSection, meta}) {
   const social_networks = hankyoProject.project.social_networks
 
   return (
-    <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      exit={{opacity: 0}}
-      transition={{opacity: {duration: .25}}}
-      className="page"
-    >
+    <div className="page">
       {/* Meta */}
       <MetaComponent hankyoProject={hankyoProject} meta={meta} />
 
@@ -43,7 +37,7 @@ export default function Contact({hankyoProject, hankyoSection, meta}) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

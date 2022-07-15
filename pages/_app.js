@@ -24,12 +24,8 @@ export default function MyApp({ Component, pageProps}) {
   }, [])
 
   return (
-    <>
-      <AnimatePresence exitBeforeEnter>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </AnimatePresence>
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
