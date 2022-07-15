@@ -32,14 +32,18 @@
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   background-color: rgba(245, 245, 245, .95);
+  float: left;
+  left: 0;
   padding: 0;
   position: fixed;
+  right: 0;
+  top: 0;
   z-index: 1;
 }
 
 .main {
-  min-height: calc(100vh - 150px);
-  padding: 152px 0;
+  min-height: calc(100vh - 86px);
+  padding: 136px 0;
   .top {
     float: left;
     width: 100%;
@@ -55,18 +59,18 @@
 }
 
 .footer {
-  padding: 32px 0;
+  padding: 0;
 }
 
 // Media Query 719px
 // -------------------------------------------------------------
 @media #{$mobile} {
   .main {
-    min-height: calc(100vh - 118px);
+    min-height: calc(100vh - 86px);
     padding: 88px 0;
   }
   .footer {
-    padding: 16px 0;
+    padding: 0;
   }
 }
 

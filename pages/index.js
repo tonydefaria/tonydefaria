@@ -47,7 +47,7 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       </div>
       <style>{`
         .main {
-          padding-top: 88px;
+          padding-top: 56px;
         }
       `}
       </style>

@@ -2,6 +2,7 @@
 
 // Built-in Components
 import React, { useState, useEffect, useCallback } from "react"
+import Headroom from "react-headroom"
 
 // Components
 import FaviconComponent from "../components/favicon_component"

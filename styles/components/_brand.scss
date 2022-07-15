@@ -6,7 +6,7 @@ $class: "brand";
 
 .#{$class} {
   float: left;
-  padding: 16px;
+  padding: 8px 16px;
   .#{$class}-box {
     float: left;
     .#{$class}-item {
@@ -40,6 +40,7 @@ $class: "brand";
 // -------------------------------------------------------------
 @media #{$mobile} {
   .#{$class} {
+    padding: 0 16px;
     .#{$class}-box {
       .#{$class}-item {
       }

@@ -31,7 +31,7 @@ export default function HeaderComponent() {
 
   return (
     <menuToggleContext.Provider value={[isOpen, setIsOpen]}>
-      <header className="universal header">
+      <header className="universal header" id="header">
         <div className="universal-box">
           <div className="universal-row">
             <BrandComponent />
