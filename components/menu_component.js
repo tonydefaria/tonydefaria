@@ -6,8 +6,12 @@ import Link from "next/link"
 
 // Components
 import { menuToggleContext } from "../components/header_component"
+import SocialNetworksTertiaryComponent from "../components/social_networks_tertiary_component"
 
-export default function MenuComponent() {
+export default function MenuComponent({project}) {
+  // Props
+  const social_networks = project.social_networks
+
   // Context
   const [isOpen, setIsOpen] = useContext(menuToggleContext)
 
@@ -31,6 +35,9 @@ export default function MenuComponent() {
         </li>
         <li className="menu-item">
           <Link href="/contact"><a className="link-m link-black text-align-center text-transform-uppercase width-wide" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+        </li>
+        <li className="menu-item">
+          <SocialNetworksTertiaryComponent social_networks={social_networks} />
         </li>
       </ul>
     </div>

@@ -1,26 +1,21 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File: Social Networks Primary
+// File: Sitemap
 // -------------------------------------------------------------
 
-$class: "social-networks-primary";
+$class: "sitemap";
 
 .#{$class} {
   float: right;
-  width: auto;
   .#{$class}-box {
     float: left;
     list-style: none;
-    padding: 24px;
+    padding: 16px;
     width: auto;
     .#{$class}-item {
       float: left;
       margin: 0;
-      padding: 8px;
+      padding: 16px;
       width: auto;
-      .icon {
-        height: 64px;
-        width: 64px;
-      }
     }
   }
 }
@@ -29,7 +24,11 @@ $class: "social-networks-primary";
 // -------------------------------------------------------------
 @media #{$mobile} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      padding: 16px 16px 0;
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -41,6 +40,8 @@ $class: "social-networks-primary";
 @media #{$m} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -52,6 +53,8 @@ $class: "social-networks-primary";
 @media #{$l} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -63,6 +66,8 @@ $class: "social-networks-primary";
 @media #{$xl} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -74,6 +79,8 @@ $class: "social-networks-primary";
 @media #{$xxl} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }

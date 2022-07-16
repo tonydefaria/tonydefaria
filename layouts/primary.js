@@ -16,7 +16,7 @@ export default function Primary({ children }) {
     <div className="primary scroll" id="primary">
       <FaviconComponent project={project} />
       <div className="gradient scroll" id="gradient">
-        <HeaderComponent />
+        <HeaderComponent project={project} />
         <main className="universal main" id="main">
           <div className="universal-box">
             <div className="universal-row">

@@ -1,26 +1,25 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File: Social Networks Primary
+// File: Social Networks Tertiary
 // -------------------------------------------------------------
 
-$class: "social-networks-primary";
+$class: "social-networks-tertiary";
 
 .#{$class} {
-  float: right;
-  width: auto;
+  float: left;
+  width: 100%;
   .#{$class}-box {
     float: left;
     list-style: none;
-    padding: 24px;
+    margin: 0;
+    padding: 16px;
     width: auto;
+    .#{$class}-row {
+    }
     .#{$class}-item {
       float: left;
       margin: 0;
       padding: 8px;
       width: auto;
-      .icon {
-        height: 64px;
-        width: 64px;
-      }
     }
   }
 }
@@ -30,6 +29,8 @@ $class: "social-networks-primary";
 @media #{$mobile} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -41,6 +42,8 @@ $class: "social-networks-primary";
 @media #{$m} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -52,6 +55,8 @@ $class: "social-networks-primary";
 @media #{$l} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -63,6 +68,8 @@ $class: "social-networks-primary";
 @media #{$xl} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }
@@ -74,6 +81,8 @@ $class: "social-networks-primary";
 @media #{$xxl} {
   .#{$class} {
     .#{$class}-box {
+      .#{$class}-row {
+      }
       .#{$class}-item {
       }
     }

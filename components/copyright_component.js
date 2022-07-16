@@ -12,10 +12,10 @@ export default function Copyright() {
   }, [])
 
   return (
-    <div className="copyright">
+    <div className="copyright flex-h-center">
       <div className="copyright-box">
         <div className="copyright-row">
-          <p className="font-size-xxs">Copyright &copy; <span className="year"></span> Tony de Faria.</p>
+          <p className="font-size-xxs">&copy; 1980-<span className="year"></span> Tony de Faria.</p>
         </div>
       </div>
     </div>

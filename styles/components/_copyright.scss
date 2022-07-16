@@ -10,11 +10,11 @@ $class: "copyright";
   .#{$class}-box {
     float: left;
     margin: 0;
-    padding: 8px;
+    padding: 16px;
     width: auto;
     .#{$class}-row {
       float: left;
-      padding: 0;
+      padding: 16px;
       width: auto;
     }
   }
@@ -24,7 +24,9 @@ $class: "copyright";
 // -------------------------------------------------------------
 @media #{$mobile} {
   .#{$class} {
+    width: 100%;
     .#{$class}-box {
+      padding: 0 16px 16px;
       .#{$class}-row {
       }
     }
