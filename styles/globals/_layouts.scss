@@ -31,19 +31,32 @@
 .header {
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  background-color: rgba(245, 245, 245, .95);
-  float: left;
+  background-color: rgba(245, 245, 245, .925);
   left: 0;
   padding: 0;
+  // position: sticky;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1;
 }
 
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 .main {
   min-height: calc(100vh - 86px);
-  padding: 136px 0;
+  padding: 144px 0;
   .top {
     float: left;
     width: 100%;
@@ -67,7 +80,7 @@
 @media #{$mobile} {
   .main {
     min-height: calc(100vh - 86px);
-    padding: 88px 0;
+    padding: 80px 0;
   }
   .footer {
     padding: 0;

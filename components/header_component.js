@@ -2,6 +2,7 @@
 
 // Built-in components
 import React, { useState, useEffect } from "react"
+import Headroom from "headroom.js"
 
 // Components
 import BrandComponent from "../components/brand_component"
@@ -17,6 +18,12 @@ export default function HeaderComponent() {
 
   // Effect
   useEffect(() => {
+    // Headroom.js
+    var options = { offset : 32 }
+    let element = document.querySelector("header");
+    let headroom = new Headroom(element, options);
+    headroom.init();
+
     const scrolls = document.querySelectorAll(".scroll");
     if (!isOpen) {
       for (const scroll of scrolls) {
@@ -36,10 +43,10 @@ export default function HeaderComponent() {
           <div className="universal-row">
             <BrandComponent />
             <HamburgerComponent />
-            <MenuComponent />
           </div>
         </div>
       </header>
+      <MenuComponent />
     </menuToggleContext.Provider>
   )
 }
