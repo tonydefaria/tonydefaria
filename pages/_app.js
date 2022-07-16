@@ -2,8 +2,8 @@
 
 // Built-in Components
 import React, { useEffect, useLayoutEffect } from "react"
-import { AnimatePresence, motion } from "framer-motion"
-import smoothscroll from "smoothscroll-polyfill"
+// import { AnimatePresence, motion } from "framer-motion"
+// import smoothscroll from "smoothscroll-polyfill"
 
 // Stylesheets
 import "../styles/composer.scss"
@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps}) {
 
   // Effect
   useEffect(() => {
-    smoothscroll.polyfill();
+    // smoothscroll.polyfill()
     // Prevent from saving images.
     document.addEventListener("contextmenu", function(event) {
       if (event.target.nodeName === "IMG") {

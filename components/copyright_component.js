@@ -9,7 +9,7 @@ export default function Copyright() {
     var date = new Date()
     var fullYear = date.getFullYear()
     document.getElementsByClassName("year")[0].innerHTML = fullYear
-  }, []);
+  }, [])
 
   return (
     <div className="copyright">

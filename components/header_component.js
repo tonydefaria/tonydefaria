@@ -19,12 +19,12 @@ export default function HeaderComponent() {
   // Effect
   useEffect(() => {
     // Headroom.js
-    var options = { offset : 32 }
-    let element = document.querySelector("header");
-    let headroom = new Headroom(element, options);
-    headroom.init();
+    // var options = { offset : 32 }
+    let element = document.querySelector("header")
+    let headroom = new Headroom(element)
+    headroom.init()
 
-    const scrolls = document.querySelectorAll(".scroll");
+    const scrolls = document.querySelectorAll(".scroll")
     if (!isOpen) {
       for (const scroll of scrolls) {
         scroll.classList.remove("noscroll")
