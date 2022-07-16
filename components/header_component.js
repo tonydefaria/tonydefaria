@@ -43,10 +43,10 @@ export default function HeaderComponent() {
           <div className="universal-row">
             <BrandComponent />
             <HamburgerComponent />
+            <MenuComponent />
           </div>
         </div>
       </header>
-      <MenuComponent />
     </menuToggleContext.Provider>
   )
 }
