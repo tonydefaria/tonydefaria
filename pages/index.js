@@ -23,6 +23,14 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
         <link rel="preload" as="image" href={hero.image} />
       </Head>
 
+      {/* Cover */}
+      <div className="cover">
+        <div className="cover-box">
+          <div className="cover-row">
+          </div>
+        </div>
+      </div>
+
       {/* Hero */}
       <div className="hero">
         <div className="hero-box">
@@ -33,6 +41,22 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
           </div>
         </div>
       </div>
+      <style>{`
+        .cover-row {
+          background-image: url(${hero.image});
+          background-size: cover;
+          background-position: bottom right;
+        }
+        .main {
+          padding-top: 72px;
+        }
+          @media (max-width: 719px) {
+            .main {
+              padding-top: 64px;
+            }
+          }
+        `}
+      </style>
     </div>
   )
 }

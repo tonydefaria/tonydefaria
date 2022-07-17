@@ -75,10 +75,10 @@ figure {
 	display: block;
   margin: 0;
   padding: 0;
-  img {
-    display: flex;
-    object-fit: cover;
-  }
+  // img {
+  //  display: flex;
+  //  object-fit: cover;
+  // }
   figcaption {
     @include font-size-xxs;
     border: 0;

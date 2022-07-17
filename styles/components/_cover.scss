@@ -1,40 +1,22 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// File: Hero
+// File: Cover
 // -------------------------------------------------------------
 
-$class: "hero";
+$class: "cover";
 
 .#{$class} {
   float: left;
   width: 100%;
   .#{$class}-box {
     float: left;
-    padding: 16px;
+    padding: 0 16px 16px;
     width: 100%;
     .#{$class}-row {
+      border-radius: 3px;
       float: left;
-      padding: 16px;
-      width: 50%;
+      height: calc(100vh - (16px + 72px));
+      width: calc(100vw - 32px)
     }
-    .#{$class}-cover {
-      background-color: blue;
-      float: left;
-      height: calc(100vh - (80px + 64px));
-      width: calc(100vw - 64px);
-    }
-    .#{$class}-separator {
-      border: none;
-      float: left;
-      height: 0px;
-      margin: 32px 0;
-      width: 100%;
-      &.sm {
-        margin: 16px 0;
-      }
-    }
-  }
-  .#{$class}-image {
-    width: 100%;
   }
 }
 
@@ -44,19 +26,7 @@ $class: "hero";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
-        width: 100%;
-      }
-      .#{$class}-separator {
-        margin: 24px 0;
-        &.sm {
-          margin: 8px 0;
-        }
-      }
-      .#{$class}-writer {
-        p {
-          margin: 0 0 32px;
-          &:last-child { margin-bottom: 0 !important; }
-        }
+        height: calc(100vh - (16px + 64px));
       }
     }
   }
@@ -68,7 +38,6 @@ $class: "hero";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
-        width: 100%;
       }
     }
   }
@@ -80,9 +49,6 @@ $class: "hero";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
-        width: 75%;
-      }
-      .#{$class}-item {
       }
     }
   }
@@ -95,8 +61,6 @@ $class: "hero";
     .#{$class}-box {
       .#{$class}-row {
       }
-      .#{$class}-item {
-      }
     }
   }
 }
@@ -107,8 +71,6 @@ $class: "hero";
   .#{$class} {
     .#{$class}-box {
       .#{$class}-row {
-      }
-      .#{$class}-item {
       }
     }
   }
