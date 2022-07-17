@@ -22,8 +22,8 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       const doc = document.documentElement
       doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
     }
-   window.addEventListener("resize", documentHeight)
-   documentHeight()
+    // window.addEventListener("resize", documentHeight)
+    documentHeight()
   }, [])
 
   return (
