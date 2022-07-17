@@ -27,15 +27,9 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       <div className="hero">
         <div className="hero-box">
           <div className="hero-row width-wide">
-            <figure>
-              <Image priority="true" src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Hero Image" title="Tony de Faria" className="hero-image" />
-            </figure>
-          </div>
-          <hr className="hero-separator sm" />
-          <div className="hero-row width-wide">
-            <h1 className="header-size-xxl">{hero.title}</h1>
+            <h1 className="header-size-display">{hero.title}</h1>
             <hr className="hero-separator" />
-            <div className="hero-writer" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
+            <div className="font-size-display" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
           </div>
         </div>
       </div>

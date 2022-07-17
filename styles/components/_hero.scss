@@ -30,8 +30,9 @@ $class: "hero";
       float: left;
       width: 100%;
       p {
-        @include font-size-m;
-        margin: 0 0 40px;
+        font-size: 7vw;
+        line-height: 1.4;
+        width: 100%;
         &:last-child { margin-bottom: 0 !important; }
       }
     }
