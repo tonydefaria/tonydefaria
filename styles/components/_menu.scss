@@ -22,10 +22,23 @@ $class: "menu";
   .#{$class}-box {
     float: left;
     list-style: none;
-    width: 320px;
+    padding: 32px;
+    width: 480px;
     .#{$class}-item {
       float: left;
+      padding: 0 0 8px;
+      margin: 0;
       width: 100%;
+      &:last-child {
+        padding: 8px 0 0;
+      }
+
+      .link {
+        font-size: 80px;
+        line-height: 1;
+        // text-transform: uppercase;
+        width: 100%;
+      }
     }
   }
   &.open {
@@ -38,6 +51,13 @@ $class: "menu";
     height: 100vh;
     visibility: hidden;
   }
+  .#{$class}-separator {
+    border: none;
+    float: left;
+    height: 0px;
+    margin: 16px 0;
+    width: 100%;
+  }
 }
 
 // Media Query 719px
@@ -45,9 +65,16 @@ $class: "menu";
 @media #{$mobile} {
   .#{$class} {
     .#{$class}-box {
-      // width: 100%;
+      width: 100%;
       .#{$class}-item {
+        .link {
+          font-size: 56px;
+          line-height: 1;
+        }
       }
+    }
+    .#{$class}-separator {
+      margin: 8px 0;
     }
   }
 }

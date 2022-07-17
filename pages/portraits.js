@@ -37,7 +37,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
         <div className="gallery-box">
           {images.map((image, index) => {
             let setPriority
-            if (index <= 2) {
+            if (index <= 4) {
               setPriority = true
             } else {
               setPriority = false

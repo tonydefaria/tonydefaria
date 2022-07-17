@@ -8,7 +8,7 @@ export default function SocialNetworksTertiaryComponent({social_networks}) {
   const trackSocialNetworkCabin = () => { window.cabin.event("Social Network Tertiary") }
 
   return (
-    <div className="social-networks-tertiary flex-h-center">
+    <div className="social-networks-tertiary">
       <ul className="social-networks-tertiary-box">
         {social_networks.map((social_network) => (
           <li key={social_network.uid} className="social-networks-tertiary-item">

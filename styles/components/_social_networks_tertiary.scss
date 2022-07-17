@@ -11,15 +11,18 @@ $class: "social-networks-tertiary";
     float: left;
     list-style: none;
     margin: 0;
-    padding: 16px;
+    padding: 0;
     width: auto;
     .#{$class}-row {
     }
     .#{$class}-item {
       float: left;
       margin: 0;
-      padding: 8px;
+      padding: 0 16px 0 0;
       width: auto;
+      &:last-child {
+        padding: 0;
+      }
     }
   }
 }
