@@ -1,7 +1,7 @@
 // Contact
 
 // Layout
-import Primary from "../layouts/primary"
+import Secondary from "../layouts/secondary"
 
 // Built-in Components
 import { motion } from "framer-motion"
@@ -73,4 +73,4 @@ export async function getStaticProps() {
   }
 }
 
-Contact.Layout = Primary
+Contact.Layout = Secondary

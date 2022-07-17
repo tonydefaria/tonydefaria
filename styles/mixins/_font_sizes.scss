@@ -80,7 +80,7 @@
 }
 
 @mixin font-size-display {
-  font-size: 12vw;
+  font-size: 9vw;
   line-height: 1.2;
   margin: 0 0 1.4em;
   width: 100%;
@@ -90,7 +90,7 @@
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
-    font-size: 10vw;
+    font-size: 7vw;
     line-height: 1.2;
     width: 100%;
   }

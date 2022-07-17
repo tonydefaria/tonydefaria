@@ -1,7 +1,7 @@
 // Portraits
 
 // Layout
-import Primary from "../layouts/primary"
+import Secondary from "../layouts/secondary"
 
 // Built-in Components
 import Image from "next/future/image"
@@ -103,4 +103,4 @@ export async function getStaticProps() {
   }
 }
 
-Portraits.Layout = Primary
+Portraits.Layout = Secondary
