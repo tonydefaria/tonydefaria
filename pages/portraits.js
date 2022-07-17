@@ -5,6 +5,7 @@ import Secondary from "../layouts/secondary"
 
 // Built-in Components
 import Image from "next/future/image"
+// import { motion } from "framer-motion"
 
 // Components
 import MetaComponent from "../components/meta_component"
@@ -25,7 +26,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
           <div className="hero-row">
             <h1 className="header-size-xxl">{hero.title}</h1>
             <hr className="hero-separator" />
-            <p className="font-size-m">{hero.description}</p>
+            <p className="font-size-l">{hero.description}</p>
           </div>
         </div>
       </div>

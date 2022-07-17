@@ -36,7 +36,6 @@ export default function MenuComponent({project}) {
         <li className="menu-item">
           <Link href="/contact"><a className="link link-black" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
         </li>
-        <hr className="menu-separator" />
         <li className="menu-item">
           <SocialNetworksTertiaryComponent social_networks={social_networks} />
         </li>

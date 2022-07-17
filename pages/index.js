@@ -33,17 +33,6 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
           </div>
         </div>
       </div>
-      <style>{`
-        .main {
-          padding-top: 72px;
-        }
-        @media (max-width: 719px) {
-          .main {
-            padding-top: 64px;
-          }
-        }
-      `}
-      </style>
     </div>
   )
 }

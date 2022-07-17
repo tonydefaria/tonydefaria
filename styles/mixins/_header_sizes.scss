@@ -4,91 +4,90 @@
 
 @mixin header-size-xxs {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
+
+  // Media Queries
+  // -------------------------------------------------------------
+  @media #{$mobile} {
+    font-size: 12px;
+  }
 }
 
 @mixin header-size-xs {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 14px;
-    line-height: 16px;
   }
 }
 
 @mixin header-size-s {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 16px;
-    line-height: 20px;
   }
 }
 
 @mixin header-size-m {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 20px;
-    line-height: 24px;
   }
 }
 
 @mixin header-size-l {
   font-size: 32px;
-  line-height: 36px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 24px;
-    line-height: 28px;
   }
 }
 
 @mixin header-size-xl {
   font-size: 40px;
-  line-height: 44px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 32px;
-    line-height: 36px;
   }
 }
 
 @mixin header-size-xxl {
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.2;
 
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
     font-size: 36px;
-    line-height: 40px;
   }
 }
 
 @mixin header-size-display {
-  font-size: 12vw;
+  font-size: 9.6vw;
   line-height: 1.2;
   width: 100%;
   // Media Queries
   // -------------------------------------------------------------
   @media #{$mobile} {
-    font-size: 10vw;
+    font-size: 9.6vw;
     line-height: 1.2;
-    width: 100%;
   }
 }
 
