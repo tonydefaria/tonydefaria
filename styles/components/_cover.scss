@@ -6,15 +6,19 @@ $class: "cover";
 
 .#{$class} {
   float: left;
+  height: 100%;
   width: 100%;
   .#{$class}-box {
     float: left;
+    height: 100%;
     padding: 0 16px 16px;
     width: 100%;
     .#{$class}-row {
       border-radius: 3px;
       float: left;
       height: calc(100vh - (16px + 72px));
+      height: calc(var(--doc-height) - (16px + 72px));
+      min-height: -webkit-fill-available;
       width: calc(100vw - 32px)
     }
   }
@@ -27,6 +31,7 @@ $class: "cover";
     .#{$class}-box {
       .#{$class}-row {
         height: calc(100vh - (16px + 64px));
+        height: calc(var(--doc-height) - (16px + 64px));
       }
     }
   }

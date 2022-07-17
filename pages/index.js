@@ -4,6 +4,7 @@
 import Primary from "../layouts/primary"
 
 // Built-in Components
+import React, { useEffect } from "react"
 import Head from "next/head"
 import Image from "next/future/image"
 // import { motion } from "framer-motion"
@@ -14,6 +15,16 @@ import MetaComponent from "../components/meta_component"
 export default function Index({hankyoProject, hankyoSection, meta}) {
   // Props
   const hero = hankyoSection.section.blocks.find(({uid}) => uid === "wqq2dxdWkWsqRwjWAbiCEpbx")
+
+  // Effect
+  useEffect(() => {
+    const documentHeight = () => {
+      const doc = document.documentElement
+      doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+    }
+   window.addEventListener("resize", documentHeight)
+   documentHeight()
+  }, [])
 
   return (
     <div className="page">
