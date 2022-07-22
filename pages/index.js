@@ -43,14 +43,14 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
               <Image src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left desktop" />
             </figure>
             <figure className="mobile">
-              <Image src={hero.mobile} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left mobile" />
+              <Image src={hero.mobile} width={hero.mobile_width} height={hero.mobile_height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left mobile" />
             </figure>
           </div>
           <hr className="hero-separator s" />
           <div className="hero-row width-wide">
             <h1 className="header-size-display">{hero.title}</h1>
             <hr className="hero-separator l" />
-            <div className="font-size-display" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
+            <div className="font-size-display" id="findme" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
           </div>
         </div>
       </div>
