@@ -28,6 +28,9 @@ $class: "hero";
       height: 0px;
       margin: 32px 0;
       width: 100%;
+      &.l {
+        margin: 80px 0;
+      }
       &.sm {
         margin: 16px 0;
       }
@@ -47,7 +50,10 @@ $class: "hero";
         width: 100%;
       }
       .#{$class}-separator {
-        margin: 24px 0;
+        margin: 16px 0;
+        &.l {
+          margin: 40px 0;
+        }
         &.sm {
           margin: 8px 0;
         }

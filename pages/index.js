@@ -17,14 +17,14 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
   const hero = hankyoSection.section.blocks.find(({uid}) => uid === "wqq2dxdWkWsqRwjWAbiCEpbx")
 
   // Effect
-  useEffect(() => {
-    const documentHeight = () => {
-      const doc = document.documentElement
-      doc.style.setProperty("--doc-height", `${window.innerHeight}px`)
-    }
+  // useEffect(() => {
+    // const documentHeight = () => {
+    //   const doc = document.documentElement
+    //   doc.style.setProperty("--doc-height", `${window.innerHeight}px`)
+    // }
     // window.addEventListener("resize", documentHeight)
-    documentHeight()
-  }, [])
+    // documentHeight()
+  // }, [])
 
   return (
     <div className="page">
@@ -32,32 +32,30 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
       <MetaComponent hankyoProject={hankyoProject} meta={meta} />
       <Head>
         <link rel="preload" as="image" href={hero.image} />
+        <link rel="preload" as="image" href={hero.mobile} />
       </Head>
-
-      {/* Cover */}
-      <div className="cover">
-        <div className="cover-box">
-          <div className="cover-row">
-          </div>
-        </div>
-      </div>
 
       {/* Hero */}
       <div className="hero">
         <div className="hero-box">
           <div className="hero-row width-wide">
+            <figure className="desktop">
+              <Image src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left desktop" />
+            </figure>
+            <figure className="mobile">
+              <Image src={hero.mobile} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left mobile" />
+            </figure>
+          </div>
+          <hr className="hero-separator s" />
+          <div className="hero-row width-wide">
             <h1 className="header-size-display">{hero.title}</h1>
-            <hr className="hero-separator" />
+            <hr className="hero-separator l" />
             <div className="font-size-display" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
           </div>
         </div>
       </div>
+
       <style>{`
-        .cover-row {
-          background-image: url(${hero.image});
-          background-size: cover;
-          background-position: bottom right;
-        }
         .main {
           padding-top: 72px;
         }

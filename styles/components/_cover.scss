@@ -16,8 +16,8 @@ $class: "cover";
     .#{$class}-row {
       border-radius: 3px;
       float: left;
-      height: calc(100vh - (16px + 72px));
-      height: calc(var(--doc-height) - (16px + 72px));
+      // height: calc(100vh - (16px + 72px));
+      // height: calc(var(--doc-height) - (16px + 72px));
       width: calc(100vw - 32px)
     }
   }
