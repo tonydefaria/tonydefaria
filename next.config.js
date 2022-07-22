@@ -2,7 +2,7 @@
 
 const nextConfig = {
   trailingSlash: true,
-  webpack5: true,
+  // webpack5: true,
   images: {
     domains: ["hankyo-production.fra1.cdn.digitaloceanspaces.com"],
   },
