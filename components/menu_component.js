@@ -1,7 +1,7 @@
 // Menu Component
 
 // Built-in components
-import React, { useContext } from "react"
+import React, { useEffect, useContext } from "react"
 import Link from "next/link"
 
 // Components
@@ -28,9 +28,9 @@ export default function MenuComponent({project}) {
   const trackMenuContactCabin = () => { window.cabin.event("Menu Contact") }
 
   return (
-    <div className={`menu flex-h-center flex-v-center ${isOpen ? "open" : "closed"}`} id="menu">
+    <div className={`menu flex-v-center ${isOpen ? "open" : "closed"}`} id="menu">
       <ul className="menu-box">
-        <li className="menu-item">
+        <li className="menu-item" data-aos="fade-up">
           <Link href="/portraits"><a className="link link-black" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
         </li>
         <li className="menu-item">

@@ -23,18 +23,18 @@ $class: "menu";
     float: left;
     list-style: none;
     padding: 32px;
-    width: 480px;
+    width: 100%;
     .#{$class}-item {
       float: left;
-      padding: 0 0 24px;
+      padding: 0 0 16px;
       margin: 0;
       width: 100%;
       &:last-child {
-        padding: 24px 0 0;
+        padding: 32px 0 0;
       }
 
       .link {
-        font-size: 56px;
+        font-size: 96px;
         line-height: 1;
         // text-transform: uppercase;
         width: 100%;
@@ -51,13 +51,6 @@ $class: "menu";
     height: 100vh;
     visibility: hidden;
   }
-  .#{$class}-separator {
-    border: none;
-    float: left;
-    height: 0px;
-    margin: 16px 0;
-    width: 100%;
-  }
 }
 
 // Media Query 719px
@@ -67,18 +60,15 @@ $class: "menu";
     .#{$class}-box {
       width: 100%;
       .#{$class}-item {
-        padding: 0 0 16px;
+        padding: 0 0 8px;
         &:last-child {
           padding: 16px 0 0;
         }
         .link {
-          font-size: 36px;
+          font-size: 48px;
           line-height: 1;
         }
       }
-    }
-    .#{$class}-separator {
-      margin: 8px 0;
     }
   }
 }

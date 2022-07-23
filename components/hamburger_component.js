@@ -1,7 +1,7 @@
 // Hamburger Component
 
 // Built-in components
-import React, { useContext } from "react"
+import React, { useEffect, useContext } from "react"
 
 // Components
 import { menuToggleContext } from "../components/header_component"
