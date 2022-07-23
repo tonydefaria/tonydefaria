@@ -154,10 +154,12 @@
     color: $black;
     .icon { svg * { fill: $black; } }
   }
-  &:hover,
-  &:active {
-    color: $red;
-    .icon { svg * { fill: $red; } }
+  @media (hover: hover) {
+    &:hover,
+    &:active {
+      color: $red;
+      .icon { svg * { fill: $red; } }
+    }
   }
 }
 
@@ -169,10 +171,12 @@
     color: $black;
     .icon { svg * { fill: $black; } }
   }
-  &:hover,
-  &:active {
-    color: $yellow;
-    .icon { svg * { fill: $yellow; } }
+  @media (hover: hover)  {
+    &:hover,
+    &:active {
+      color: $yellow;
+      .icon { svg * { fill: $yellow; } }
+    }
   }
 }
 
