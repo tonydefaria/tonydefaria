@@ -50,7 +50,7 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
           <div className="hero-row width-wide">
             <h1 className="header-size-display">{hero.title}</h1>
             <hr className="hero-separator l" />
-            <div className="font-size-display" id="findme" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
+            <div className="font-size-display" dangerouslySetInnerHTML={{ __html: hero.description_simple_format }} />
           </div>
         </div>
       </div>

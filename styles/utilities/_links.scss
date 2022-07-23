@@ -146,6 +146,36 @@
   }
 }
 
+@mixin link-black-red {
+  color: $black;
+  fill: $black;
+  &:link,
+  &:visited {
+    color: $black;
+    .icon { svg * { fill: $black; } }
+  }
+  &:hover,
+  &:active {
+    color: $red;
+    .icon { svg * { fill: $red; } }
+  }
+}
+
+@mixin link-black-yellow {
+  color: $black;
+  fill: $black;
+  &:link,
+  &:visited {
+    color: $black;
+    .icon { svg * { fill: $black; } }
+  }
+  &:hover,
+  &:active {
+    color: $yellow;
+    .icon { svg * { fill: $yellow; } }
+  }
+}
+
 @mixin link-white {
   color: $white;
   fill: $white;
@@ -199,7 +229,9 @@
 .link-m   { @include link-m; }
 .link-l   { @include link-l; }
 
-.link-white   { @include link-white; }
-.link-black   { @include link-black; }
-.link-yellow  { @include link-yellow; }
-.link-red     { @include link-red; }
+.link-white         { @include link-white; }
+.link-black         { @include link-black; }
+.link-black-red     { @include link-black-red; }
+.link-black-yellow  { @include link-black-yellow; }
+.link-yellow        { @include link-yellow; }
+.link-red           { @include link-red; }

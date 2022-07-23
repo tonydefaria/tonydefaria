@@ -31,10 +31,10 @@ export default function MenuComponent({project}) {
     <div className={`menu flex-v-center ${isOpen ? "open" : "closed"}`} id="menu">
       <ul className="menu-box">
         <li className="menu-item" data-aos="fade-up">
-          <Link href="/portraits"><a className="link link-black" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
+          <Link href="/portraits"><a className="link link-black-red" onClick={() => { toggleMenu(); trackMenuPortraitsCabin();}}>Portraits</a></Link>
         </li>
         <li className="menu-item">
-          <Link href="/contact"><a className="link link-black" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
+          <Link href="/contact"><a className="link link-black-red" onClick={() => { toggleMenu(); trackMenuContactCabin();}}>Contact</a></Link>
         </li>
         <li className="menu-item">
           <SocialNetworksTertiaryComponent social_networks={social_networks} />

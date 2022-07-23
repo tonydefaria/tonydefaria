@@ -8,13 +8,13 @@ export default function Sitemap() {
     <div className="sitemap flex-h-center">
       <ul className="sitemap-box">
         <li className="sitemap-item">
-          <Link href="/"><a className="link-xs link-black" data-cabin-event="Sitemap Home">Home</a></Link>
+          <Link href="/"><a className="link-xs link-black-red" data-cabin-event="Sitemap Home">Home</a></Link>
         </li>
         <li className="sitemap-item">
-          <Link href="/portraits"><a className="link-xs link-black" data-cabin-event="Sitemap Portraits">Portraits</a></Link>
+          <Link href="/portraits"><a className="link-xs link-black-red" data-cabin-event="Sitemap Portraits">Portraits</a></Link>
         </li>
         <li className="sitemap-item">
-          <Link href="/contact"><a className="link-xs link-black" data-cabin-event="Sitemap Contact">Contact</a></Link>
+          <Link href="/contact"><a className="link-xs link-black-red" data-cabin-event="Sitemap Contact">Contact</a></Link>
         </li>
       </ul>
     </div>

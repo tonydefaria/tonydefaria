@@ -9,7 +9,7 @@ export default function SocialNetworksSecondaryComponent({social_networks}) {
       <ul className="social-networks-secondary-box">
         {social_networks.map((social_network) => (
           <li key={social_network.uid} className="social-networks-secondary-item">
-            <a href={social_network.url} target="_blank" rel="noreferrer noopener" className="link-xs social-networks-secondary-track" onClick={trackSocialNetworkCabin}>{social_network.name}</a>
+            <a href={social_network.url} target="_blank" rel="noreferrer noopener" className="link-xs link-black-red social-networks-secondary-track" onClick={trackSocialNetworkCabin}>{social_network.name}</a>
           </li>
         ))}
       </ul>

@@ -2,6 +2,7 @@
 
 // Built-in components
 import React, { useEffect, useContext } from "react"
+import Link from "next/link"
 
 // Components
 import { menuToggleContext } from "../components/header_component"
@@ -15,7 +16,8 @@ export default function MenuComponent() {
   const [isOpen, setIsOpen] = useContext(menuToggleContext)
 
   // Toggle Menu
-  const toggleMenu = () => {
+  const toggleMenu = (event) => {
+    event.preventDefault()
     setIsOpen(!isOpen)
     window.scrollTo({top: 0, left: 0, right: 0})
   }
@@ -24,11 +26,13 @@ export default function MenuComponent() {
     <div className="hamburger">
       <ul className="hamburger-box">
         <li className="hamburger-item">
-          <button className="link link-black" onClick={toggleMenu}>
-            <span className="icon">
-              {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
-            </span>
-          </button>
+          <Link href="/">
+            <a className="link link-black-red" onClick={toggleMenu}>
+              <span className="icon">
+                {isOpen ? <CloseIcon /> : <HamburgerIcon /> }
+              </span>
+            </a>
+          </Link>
         </li>
       </ul>
     </div>

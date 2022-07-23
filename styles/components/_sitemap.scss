@@ -14,7 +14,7 @@ $class: "sitemap";
     .#{$class}-item {
       float: left;
       margin: 0;
-      padding: 16px;
+      padding: 16px 8px;
       width: auto;
     }
   }
@@ -30,7 +30,7 @@ $class: "sitemap";
       .#{$class}-row {
       }
       .#{$class}-item {
-        padding: 16px 16px 4px;
+        padding: 16px 8px 4px;
       }
     }
   }
