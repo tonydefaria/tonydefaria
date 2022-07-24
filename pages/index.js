@@ -40,10 +40,10 @@ export default function Index({hankyoProject, hankyoSection, meta}) {
         <div className="hero-box">
           <div className="hero-row width-wide">
             <figure className="desktop">
-              <Image src={hero.image} width={hero.width} height={hero.height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left desktop" />
+              <Image src={hero.image} width={hero.width} height={hero.height} quality={100} alt={`Tony de Faria - Home - ${hero.uid}`} title="Tony de Faria" priority="true" className="cover-image float-left desktop" />
             </figure>
             <figure className="mobile">
-              <Image src={hero.mobile} width={hero.mobile_width} height={hero.mobile_height} quality={60} alt="Tony de Faria - Home - Animation" title="Tony de Faria" priority="true" className="cover-image float-left mobile" />
+              <Image src={hero.mobile} width={hero.mobile_width} height={hero.mobile_height} quality={100} alt={`Tony de Faria - Home - ${hero.uid}`} title="Tony de Faria" priority="true" className="cover-image float-left mobile" />
             </figure>
           </div>
           <hr className="hero-separator s" />

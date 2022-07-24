@@ -57,7 +57,7 @@ export default function Portraits({hankyoProject, hankyoSection, meta}) {
               <div key={image.uid} className="gallery-item">
                 <div className={setAlignment}>
                   <figure>
-                    <Image src={image.image} width={image.width} height={image.height} quality={60} alt="Tony de Faria - Portraits - Gallery Image" title="Tony de Faria" priority={setPriority} />
+                    <Image src={image.image} width={image.width} height={image.height} quality={100} alt={`Tony de Faria - Portrait - ${image.uid}`} title="Tony de Faria" priority={setPriority} />
                     <figcaption>
                       {image.caption}
                     </figcaption>
