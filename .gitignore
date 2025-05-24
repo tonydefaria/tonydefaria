@@ -1,0 +1,60 @@
+# ────────────────────────────────
+# Laravel / Statamic core
+/vendor
+/node_modules
+/bootstrap/cache/*
+/storage/*.key
+/storage/app/*
+/storage/framework/*
+/storage/logs/*
+
+# ────────────────────────────────
+# Statamic-specific
+/site/cache
+/site/temp
+/site/web/assets/*
+
+# 🔐 Exclude user YAMLs (as discussed)
+/users
+
+# ✅ Content stays tracked
+!content/
+!content/**/*
+
+# ────────────────────────────────
+# Build output (Vite)
+public/hot
+public/build/
+public/storage
+public/vendor
+
+# ────────────────────────────────
+# Environment files
+.env
+.env.backup
+.env.production
+.phpunit.cache
+.phpunit.result.cache
+/auth.json
+
+# ────────────────────────────────
+# Editors & OS junk
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-error.log
+*.sublime*
+*.swp
+
+# IDEs & Tools
+/NOTES.md
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.zed
+
+# ────────────────────────────────
+# Homestead (if applicable)
+Homestead.json
+Homestead.yaml
