@@ -7,10 +7,10 @@ export default defineConfig({
       input: [
         // CSS
         "resources/css/site.scss",
-        "resources/css/cp.scss",
+        // "resources/css/cp.scss",
         // JS
-        "resources/js/site.js",
-        "resources/js/cp.js"
+        "resources/js/site.js"
+        // "resources/js/cp.js"
       ],
       refresh: true
     })
