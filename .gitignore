@@ -14,32 +14,19 @@
 /site/temp
 /site/web/assets/*
 
-# 🔐 Ignore user-generated content (after initial commit)
-/content/assets/*
-/content/entries/*
-/content/globals/*
-/content/pages/*
-/content/users/*
-/content/collections/**/*
-/content/navigation/**/*
-/content/forms/**/*
-/content/taxonomies/**/*
+# 🔐 Exclude user YAMLs (as discussed)
+/users
 
-# ✅ Keep structure YAMLs (already committed)
-!content/collections/*.yaml
-!content/navigation/*.yaml
-!content/forms/*.yaml
-!content/taxonomies/*.yaml
-
-# ✅ Keep .gitignore placeholders
-!content/**/.gitignore
+# ✅ Content stays tracked
+!content/
+!content/**/*
 
 # ────────────────────────────────
 # Build output (Vite)
-/public/hot
-/public/build/
-/public/storage
-/public/vendor
+public/hot
+public/build/
+public/storage
+public/vendor
 
 # ────────────────────────────────
 # Environment files
@@ -51,7 +38,7 @@
 /auth.json
 
 # ────────────────────────────────
-# Editor & OS junk
+# Editors & OS junk
 .DS_Store
 Thumbs.db
 npm-debug.log
