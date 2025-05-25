@@ -1,0 +1,7 @@
+name: 'Tony de Faria'
+super: true
+id: 07b9cbd9-fa52-4a8d-b244-f550e141ac0e
+password_hash: $2y$12$jk8iUCK6ikvsNMi6YNUcdu78Mw0OeY6oaypJWgI4syK5rgkQod9AW
+preferences:
+  locale: en
+  favorites: {  }

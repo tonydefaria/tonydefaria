@@ -14,12 +14,25 @@
 /site/temp
 /site/web/assets/*
 
-# 🔐 Exclude user YAMLs (as discussed)
-/users
+# 🔐 Ignore user-generated content (live content written via control panel)
+content/assets/
+content/entries/
+content/globals/
+content/pages/
+content/users/
+content/collections/**/*
+content/navigation/**/*
+content/forms/**/*
+content/taxonomies/**/*
 
-# ✅ Content stays tracked
-!content/
-!content/**/*
+# ✅ Allow structure definition files (YAML)
+!content/collections/*.yaml
+!content/navigation/*.yaml
+!content/forms/*.yaml
+!content/taxonomies/*.yaml
+
+# ✅ Allow `.gitignore` placeholders to keep folder structure
+!content/**/.gitignore
 
 # ────────────────────────────────
 # Build output (Vite)
