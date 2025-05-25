@@ -14,32 +14,32 @@
 /site/temp
 /site/web/assets/*
 
-# 🔐 Ignore user-generated content (live content written via control panel)
-content/assets/
-content/entries/
-content/globals/
-content/pages/
-content/users/
-content/collections/**/*
-content/navigation/**/*
-content/forms/**/*
-content/taxonomies/**/*
+# 🔐 Ignore user-generated content (after initial commit)
+/content/assets/*
+/content/entries/*
+/content/globals/*
+/content/pages/*
+/content/users/*
+/content/collections/**/*
+/content/navigation/**/*
+/content/forms/**/*
+/content/taxonomies/**/*
 
-# ✅ Allow structure definition files (YAML)
+# ✅ Keep structure YAMLs (already committed)
 !content/collections/*.yaml
 !content/navigation/*.yaml
 !content/forms/*.yaml
 !content/taxonomies/*.yaml
 
-# ✅ Allow `.gitignore` placeholders to keep folder structure
+# ✅ Keep .gitignore placeholders
 !content/**/.gitignore
 
 # ────────────────────────────────
 # Build output (Vite)
-public/hot
-public/build/
-public/storage
-public/vendor
+/public/hot
+/public/build/
+/public/storage
+/public/vendor
 
 # ────────────────────────────────
 # Environment files
@@ -51,7 +51,7 @@ public/vendor
 /auth.json
 
 # ────────────────────────────────
-# Editors & OS junk
+# Editor & OS junk
 .DS_Store
 Thumbs.db
 npm-debug.log
