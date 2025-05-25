@@ -1,8 +1,7 @@
 title: Asset
 fields:
-  -
-    handle: alt
+  - handle: alt
     field:
-      display: 'Alt Text'
+      display: "Alt Text"
       type: text
-      instructions: 'Description of the image'
+      instructions: "Description of the image"

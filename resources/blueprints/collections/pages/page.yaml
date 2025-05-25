@@ -1,0 +1,54 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      - fields:
+          - handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+  hero:
+    display: Hero
+    sections:
+      - fields:
+          - import: hero
+      - display: "New Section"
+  seo:
+    display: SEO
+    sections:
+      - fields:
+          - import: seo
+  sidebar:
+    display: Sidebar
+    sections:
+      - fields:
+          - handle: seo_index
+            field:
+              type: toggle
+              display: Indexed
+              default: true
+          - handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: "max:200"
+          - handle: template
+            field:
+              type: select
+              display: Template
+              localizable: true
+              options:
+                layouts/default: Default
+                layouts/home: Homepage
+              default: layouts/default
+          - handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

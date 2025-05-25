@@ -2,16 +2,10 @@ import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
+  base: process.env.NODE_ENV === "production" ? process.env.ASSET_CDN_URL + "/" : "/",
   plugins: [
     laravel({
-      input: [
-        // CSS
-        "resources/css/site.scss",
-        // "resources/css/cp.scss",
-        // JS
-        "resources/js/site.js"
-        // "resources/js/cp.js"
-      ],
+      input: ["resources/css/site.scss", "resources/js/site.js"],
       refresh: true
     })
   ]

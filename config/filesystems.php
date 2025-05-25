@@ -1,5 +1,14 @@
 <?php
 
+$spacesBase = [
+  'driver' => 's3',
+  'key' => env('DO_SPACES_KEY'),
+  'secret' => env('DO_SPACES_SECRET'),
+  'endpoint' => env('DO_SPACES_ENDPOINT'),
+  'region' => env('DO_SPACES_REGION'),
+  'visibility' => 'public',
+];
+
 return [
 
   /*
@@ -34,82 +43,59 @@ return [
     // START :: In usage with Statamic
     // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-    'do' => [
-      'driver' => 's3',
-      'key' => env('DO_SPACES_KEY'),
-      'secret' => env('DO_SPACES_SECRET'),
-      'endpoint' => env('DO_SPACES_ENDPOINT'),
-      'region' => env('DO_SPACES_REGION'),
+    'do' => array_merge($spacesBase, [
       'bucket' => env('DO_SPACES_BUCKET'),
       'url' => env('DO_SPACES_CDN_URL'),
-      'visibility' => 'public',
-    ],
+    ]),
 
-    'do_metadata' => [
-      'driver' => 's3',
-      'key' => env('DO_SPACES_KEY'),
-      'secret' => env('DO_SPACES_SECRET'),
-      'endpoint' => env('DO_SPACES_ENDPOINT'),
-      'region' => env('DO_SPACES_REGION'),
-      'bucket' => env('DO_SPACES_METADATA_BUCKET'),
-      'url' => env('DO_SPACES_METADATA_CDN_URL'),
-      'visibility' => 'public',
-    ],
-
-    'do_glide' => [
-      'driver' => 's3',
-      'key' => env('DO_SPACES_KEY'),
-      'secret' => env('DO_SPACES_SECRET'),
-      'endpoint' => env('DO_SPACES_ENDPOINT'),
-      'region' => env('DO_SPACES_REGION'),
+    'do_glide' => array_merge($spacesBase, [
       'bucket' => env('DO_SPACES_GLIDE_BUCKET'),
       'url' => env('DO_SPACES_GLIDE_CDN_URL'),
-      'visibility' => 'public',
-    ],
+    ]),
 
     // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
     // END :: In usage with Statamic
     // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
 
-    'local' => [
-      'driver' => 'local',
-      'root' => storage_path('app/private'),
-      'serve' => true,
-      'throw' => false,
-      'report' => false,
-    ],
+    // 'local' => [
+    //   'driver' => 'local',
+    //   'root' => storage_path('app/private'),
+    //   'serve' => true,
+    //   'throw' => false,
+    //   'report' => false,
+    // ],
+    //
+    // 'public' => [
+    //   'driver' => 'local',
+    //   'root' => storage_path('app/public'),
+    //   'url' => env('APP_URL') . '/storage',
+    //   'visibility' => 'public',
+    //   'throw' => false,
+    //   'report' => false,
+    // ],
+    //
+    // 's3' => [
+    //   'driver' => 's3',
+    //   'key' => env('AWS_ACCESS_KEY_ID'),
+    //   'secret' => env('AWS_SECRET_ACCESS_KEY'),
+    //   'region' => env('AWS_DEFAULT_REGION'),
+    //   'bucket' => env('AWS_BUCKET'),
+    //   'url' => env('AWS_URL'),
+    //   'endpoint' => env('AWS_ENDPOINT'),
+    //   'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+    //   'throw' => false,
+    //   'report' => false,
+    //   // 'visibility' => 'public', // https://statamic.dev/assets#visibility
+    // ],
 
-    'public' => [
-      'driver' => 'local',
-      'root' => storage_path('app/public'),
-      'url' => env('APP_URL') . '/storage',
-      'visibility' => 'public',
-      'throw' => false,
-      'report' => false,
-    ],
-
-    's3' => [
-      'driver' => 's3',
-      'key' => env('AWS_ACCESS_KEY_ID'),
-      'secret' => env('AWS_SECRET_ACCESS_KEY'),
-      'region' => env('AWS_DEFAULT_REGION'),
-      'bucket' => env('AWS_BUCKET'),
-      'url' => env('AWS_URL'),
-      'endpoint' => env('AWS_ENDPOINT'),
-      'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
-      'throw' => false,
-      'report' => false,
-      // 'visibility' => 'public', // https://statamic.dev/assets#visibility
-    ],
-
-    'assets' => [
-      'driver' => 'local',
-      'root' => public_path('assets'),
-      'url' => '/assets',
-      'visibility' => 'public',
-      'throw' => false,
-      'report' => false,
-    ],
+    // 'assets' => [
+    //   'driver' => 'local',
+    //   'root' => public_path('assets'),
+    //   'url' => '/assets',
+    //   'visibility' => 'public',
+    //   'throw' => false,
+    //   'report' => false,
+    // ],
 
   ],
 

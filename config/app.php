@@ -17,6 +17,21 @@ return [
 
   /*
   |--------------------------------------------------------------------------
+  | Custom Variables
+  |--------------------------------------------------------------------------
+  |
+  | You may add any custom variables you want to be available in your
+  | application here. To retrieve them, use {{ config:app:variable_name }}.
+  |
+  */
+
+  'assets' => env('DO_SPACES_URL'),
+  'assets_cdn' => env('DO_SPACES_CDN_URL'),
+  'assets_glide' => env('DO_SPACES_GLIDE_URL'),
+  'assets_glide_cdn' => env('DO_SPACES_GLIDE_CDN_URL'),
+
+  /*
+  |--------------------------------------------------------------------------
   | Application Environment
   |--------------------------------------------------------------------------
   |

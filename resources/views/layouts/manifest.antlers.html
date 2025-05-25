@@ -1,0 +1,22 @@
+{{#
+  # Layouts :: Manifest
+#}}
+
+{
+  "name": "{{ metadata.application_name }}",
+  "short_name": "{{ metadata.short_name }}",
+  "description": "{{ metadata.description }}",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "{{ metadata.background_color }}",
+  "theme_color": "{{ metadata.theme_color }}",
+  "icons": [
+    { "src": "{{ config:app:assets_cdn }}/favicons/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "{{ config:app:assets_cdn }}/favicons/icon-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "{{ config:app:assets_cdn }}/favicons/maskable-icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "{{ config:app:assets_cdn }}/favicons/maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "lang": "{{ site:short_locale }}",
+  "dir": "ltr"
+}

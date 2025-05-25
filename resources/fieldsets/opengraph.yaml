@@ -1,0 +1,26 @@
+title: Opengraph
+fields:
+  - handle: opengraph_type
+    field:
+      default: "website"
+      options:
+        - key: website
+          value: Website
+        - key: article
+          value: Article
+      type: select
+      display: Type
+      width: 50
+  - handle: opengraph_site_name
+    field:
+      default: Tony de Faria
+      type: text
+      display: Site Name
+      width: 50
+  - handle: opengraph_image
+    field:
+      container: assets
+      type: assets
+      display: Image
+      max_files: 1
+      folder: opengraph

@@ -1,0 +1,110 @@
+title: Metadata
+tabs:
+  main:
+    display: Main
+    sections:
+      - fields:
+          - handle: title
+            field:
+              default: "Tony de Faria - Storytelling through photography"
+              character_limit: 60
+              type: text
+              display: Title
+          - handle: description
+            field:
+              character_limit: 160
+              default: "Tony's curiosity fuels his love for photography as he travels the world, capturing individuals' unique relationships with their environment and experiences."
+              type: textarea
+              display: Description
+      - fields:
+          - handle: index
+            field:
+              default: true
+              type: toggle
+              display: Index
+              width: 100
+          - handle: base_url
+            field:
+              input_type: url
+              default: "https://www.tonydefaria.com"
+              type: text
+              display: "Base URL"
+              width: 50
+          - handle: application_name
+            field:
+              type: text
+              width: 50
+              default: "Tony de Faria"
+          - handle: short_name
+            field:
+              type: text
+              width: 50
+              display: "Short Name"
+              default: TdF
+          - handle: author
+            field:
+              type: text
+              width: 50
+          - handle: creator
+            field:
+              type: text
+              width: 50
+          - handle: publisher
+            field:
+              type: text
+              width: 50
+          - handle: copyright
+            field:
+              default: "Tony de Faria"
+              type: text
+              display: Copyright
+              width: 50
+          - handle: job_title
+            field:
+              type: text
+              width: 50
+              display: "Job Title"
+              default: Photographer
+          - handle: avatar
+            field:
+              container: assets
+              type: assets
+              display: Avatar
+              width: 50
+              max_files: 1
+          - handle: logo
+            field:
+              container: assets
+              type: assets
+              display: Logo
+              width: 50
+              max_files: 1
+          - handle: background_color
+            field:
+              swatches:
+                - "#F7F7F6"
+                - "#11100E"
+              allow_any: false
+              default: "#11100E"
+              type: color
+              display: "Background Color"
+              width: 50
+          - handle: theme_color
+            field:
+              swatches:
+                - "#F7F7F6"
+                - "#11100E"
+              allow_any: false
+              default: "#11100E"
+              type: color
+              display: "Theme Color"
+              width: 50
+      - display: Opengraph
+        fields:
+          - import: opengraph
+      - display: Twitter
+        fields:
+          - import: twitter
+      - display: Favicons
+        fields:
+          - import: favicons

@@ -1,0 +1,64 @@
+title: Hero
+fields:
+  - handle: hero_type
+    field:
+      options:
+        - key: default
+          value: Default
+        - key: grid
+          value: Grid
+        - key: fullscreen
+          value: Fullscreen
+      default: default
+      type: radio
+      display: Type
+      inline: true
+  - handle: hero_title
+    field:
+      type: text
+      display: Title
+  - handle: hero_subtitle
+    field:
+      type: text
+      display: Subtitle
+  - handle: hero_lead
+    field:
+      buttons:
+        - bold
+        - italic
+        - link
+      escape_markup: true
+      heading_anchors: true
+      smartypants: true
+      type: markdown
+      display: Lead
+  - handle: hero_cardlet_thumbnail
+    field:
+      container: assets
+      dynamic: id
+      restrict: true
+      type: assets
+      display: "Cardlet Thumbnail"
+      if:
+        hero_type: "equals fullscreen"
+      width: 33
+  - handle: hero_cardlet_label
+    field:
+      type: text
+      display: "Cardlet Label"
+      if:
+        hero_type: "equals fullscreen"
+      width: 66
+  - handle: hero_cardlet_link
+    field:
+      collections:
+        - pages
+      container: assets
+      type: link
+      display: "Cardlet Link"
+      if:
+        hero_type: "equals fullscreen"
+        hero_cardlet_label: "not null"
+      validate:
+        - sometimes
+        - null

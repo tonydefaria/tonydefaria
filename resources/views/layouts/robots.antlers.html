@@ -1,0 +1,31 @@
+{{#
+  # Layouts :: Robots
+#}}
+
+User-agent: *
+
+Disallow: /admin
+Disallow: /api
+Disallow: /auth
+Disallow: /app
+Disallow: /bootstrap
+Disallow: /config
+Disallow: /content
+Disallow: /core
+Disallow: /database
+Disallow: /data
+Disallow: /lang
+Disallow: /languages
+Disallow: /logs
+Disallow: /node_modules
+Disallow: /notes
+Disallow: /packages
+Disallow: /resources
+Disallow: /routes
+Disallow: /storage
+Disallow: /tests
+Disallow: /users
+Disallow: /vendor
+{{ collection:pages }} {{ if metadata:index != true || seo_index != true }}
+Disallow: {{ url }}
+{{ /if }} {{ /collection:pages }}

@@ -1,0 +1,60 @@
+title: SEO
+fields:
+  - handle: seo_schema_type
+    field:
+      options:
+        - key: default
+          value: Default
+        - key: home
+          value: Home
+        - key: about
+          value: About
+        - key: stories
+          value: Stories
+        - key: story
+          value: Story
+        - key: portraits
+          value: Portraits
+        - key: contact
+          value: Contact
+      default: default
+      type: select
+      display: "Schema Type"
+      width: 50
+  - handle: seo_opengraph_type
+    field:
+      options:
+        - key: website
+          value: Website
+        - key: article
+          value: Article
+      default: website
+      type: select
+      display: Opengraph Type
+      width: 50
+  - handle: seo_title
+    field:
+      type: text
+      display: Title
+      character_limit: 60
+  - handle: seo_description
+    field:
+      character_limit: 160
+      type: textarea
+      display: Description
+  - handle: seo_canonical
+    field:
+      input_type: url
+      type: text
+      display: Canonical
+  - handle: seo_opengraph_image
+    field:
+      container: assets
+      type: assets
+      display: Image
+      max_files: 1
+      folder: opengraph
+  - handle: seo_keywords
+    field:
+      type: text
+      display: Seo Keywords

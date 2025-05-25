@@ -1,0 +1,18 @@
+{{#
+  # Partials :: Schema :: Schema
+#}}
+{{ if seo_schema_type === "home" }}
+  {{ partial:core/schema_types/home }}
+{{ elseif seo_schema_type === "about" }}
+  {{ partial:core/schema_types/about }}
+{{ elseif seo_schema_type === "stories" }}
+  {{ partial:core/schema_types/stories }}
+{{ elseif seo_schema_type === "story" }}
+  {{ partial:core/schema_types/story }}
+{{ elseif seo_schema_type === "portraits" }}
+  {{ partial:core/schema_types/portraits }}
+{{ elseif seo_schema_type === "contact" }}
+  {{ partial:core/schema_types/contact }}
+{{ else seo_schema_type === "default" }}
+  {{ partial:core/schema_types/default }}
+{{ /if }}

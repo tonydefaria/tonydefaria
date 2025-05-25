@@ -1,0 +1,10 @@
+title: Favicons
+fields:
+  - handle: favicons_images
+    field:
+      mode: grid
+      container: assets
+      folder: favicons
+      type: assets
+      display: Images
+      show_set_alt: false

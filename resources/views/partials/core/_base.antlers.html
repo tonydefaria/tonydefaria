@@ -1,0 +1,10 @@
+{{#
+  # Partials :: Core :: Base
+#}}
+
+<title>{{ seo_title || metadata.title }}</title>
+<meta name="description" content="{{ seo_description || metadata.description }}" />
+<link rel="canonical" href="{{ seo_canonical || current_url }}" />
+<meta name="application-name" content="{{ metadata.application_name }}" />
+<meta name="author" content="{{ metadata.author }}" />
+<meta name="copyright" content="{{ metadata.copyright }}" />

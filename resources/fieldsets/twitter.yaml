@@ -1,0 +1,37 @@
+title: Twitter
+fields:
+  - handle: twitter_site_name
+    field:
+      default: "@tonydefaria"
+      type: text
+      display: Site Name
+      width: 50
+  - handle: twitter_site_id
+    field:
+      default: 111888953
+      type: text
+      display: "Site ID"
+      width: 50
+  - handle: twitter_creator
+    field:
+      default: "@tonydefaria"
+      type: text
+      display: Creator
+      width: 50
+  - handle: twitter_creator_id
+    field:
+      default: 111888953
+      type: text
+      display: Creator ID
+      width: 50
+  - handle: twitter_card
+    field:
+      options:
+        - key: summary
+          value: Summary
+        - key: summary_large_image
+          value: "Summary Large Image"
+      default: summary_large_image
+      type: select
+      display: Card
+      width: 50

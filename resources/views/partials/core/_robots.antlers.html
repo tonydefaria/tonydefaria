@@ -1,0 +1,10 @@
+{{#
+  # Partials :: Core :: Robots
+#}}
+{{ if (metadata.index === null || metadata.index == false ) || (seo_index === null || seo_index == false ) }}
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow, noimageindex, max-image-preview:none, max-video-preview:0, max-snippet:0" />
+{{ else }}
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-video-preview:-1, max-snippet:-1" />
+{{ /if }}
