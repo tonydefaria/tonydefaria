@@ -1,3 +1,5 @@
+// https://laravel.com/docs/9.x/vite
+
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 

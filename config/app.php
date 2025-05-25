@@ -25,10 +25,10 @@ return [
   |
   */
 
-  'assets' => env('DO_SPACES_URL'),
-  'assets_cdn' => env('DO_SPACES_CDN_URL'),
-  'assets_glide' => env('DO_SPACES_GLIDE_URL'),
-  'assets_glide_cdn' => env('DO_SPACES_GLIDE_CDN_URL'),
+  'assets' => env('CDN_ASSETS_URL'),
+  'assets_cdn' => env('CDN_ASSETS_URL'),
+  'assets_glide' => env('CDN_PROCESSED_URL'),
+  'assets_glide_cdn' => env('CDN_PROCESSED_URL'),
 
   /*
   |--------------------------------------------------------------------------
