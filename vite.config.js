@@ -2,14 +2,16 @@ import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
-  base: "https://staging-tonydefaria.b-cdn.net/build/",
-  build: {
-    outDir: "public/build",
-    emptyOutDir: true
-  },
   plugins: [
     laravel({
-      input: ["resources/css/site.scss", "resources/js/site.js"],
+      input: [
+        // CSS
+        "resources/css/site.scss",
+        // "resources/css/cp.scss",
+        // JS
+        "resources/js/site.js"
+        // "resources/js/cp.js"
+      ],
       refresh: true
     })
   ]
