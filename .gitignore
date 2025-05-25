@@ -17,9 +17,13 @@
 # 🔐 Exclude user YAMLs (as discussed)
 /users
 
+# ✅ Content stays untracked
+/content/
+/content/**/*
+
 # ✅ Content stays tracked
-!content/
-!content/**/*
+# !content/
+# !content/**/*
 
 # ────────────────────────────────
 # Build output (Vite)
