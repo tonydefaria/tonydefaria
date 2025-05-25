@@ -18,10 +18,10 @@
 /users
 
 # ✅ Content stays tracked
-# !content/
-# !content/**/*
-content/*
-!content/.gitignore
+!content/
+!content/**/*
+# content/*
+# !content/.gitignore
 
 # ────────────────────────────────
 # Build output (Vite)

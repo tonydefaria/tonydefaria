@@ -1,0 +1,11 @@
+tree:
+  -
+    entry: home
+  -
+    entry: stories
+  -
+    entry: portraits
+  -
+    entry: about
+  -
+    entry: contact
