@@ -1,12 +1,16 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 
-export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? process.env.ASSET_CDN_URL + "/" : "/",
+export default defineConfig({
+  base: "https://staging-tonydefaria.b-cdn.net/build/",
+  build: {
+    outDir: "public/build",
+    emptyOutDir: true
+  },
   plugins: [
     laravel({
       input: ["resources/css/site.scss", "resources/js/site.js"],
       refresh: true
     })
   ]
-}));
+});
