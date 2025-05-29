@@ -13,7 +13,7 @@ return [
   |
   */
 
-  'name' => env('APP_NAME', 'Statamic'),
+  'name' => env('APP_NAME', 'tonydefaria'),
 
   /*
   |--------------------------------------------------------------------------
@@ -25,10 +25,8 @@ return [
   |
   */
 
-  'assets' => env('CDN_ASSETS_URL'),
   'assets_cdn' => env('CDN_ASSETS_URL'),
-  'assets_glide' => env('CDN_PROCESSED_URL'),
-  'assets_glide_cdn' => env('CDN_PROCESSED_URL'),
+  'assets_glide_cdn' => env('CDN_ASSETS_GLIDE_URL'),
 
   /*
   |--------------------------------------------------------------------------

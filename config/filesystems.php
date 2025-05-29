@@ -50,7 +50,7 @@ return [
 
     'do_glide' => array_merge($spacesBase, [
       'bucket' => env('DO_SPACES_GLIDE_BUCKET'),
-      'url' => env('CDN_PROCESSED_URL'),
+      'url' => env('CDN_ASSETS_GLIDE_URL'),
     ]),
 
     // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
