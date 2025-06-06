@@ -5,3 +5,6 @@ password_hash: $2y$12$jk8iUCK6ikvsNMi6YNUcdu78Mw0OeY6oaypJWgI4syK5rgkQod9AW
 preferences:
   locale: en
   favorites: {  }
+  collections:
+    pages:
+      after_save: continue_editing

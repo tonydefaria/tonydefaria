@@ -39,16 +39,16 @@ fields:
       restrict: true
       type: assets
       display: "Cardlet Thumbnail"
+      width: 50
       if:
         hero_type: "equals fullscreen"
-      width: 33
   - handle: hero_cardlet_label
     field:
       type: text
       display: "Cardlet Label"
       if:
         hero_type: "equals fullscreen"
-      width: 66
+      width: 50
   - handle: hero_cardlet_link
     field:
       collections:
