@@ -25,8 +25,8 @@ return [
   |
   */
 
-  'assets_cdn' => env('CDN_ASSETS_URL'),
-  'assets_glide_cdn' => env('CDN_ASSETS_GLIDE_URL'),
+  'assets_cdn' => env('ASSETS_URL'),
+  'assets_glide_cdn' => env('ASSETS_GLIDE_URL'),
 
   /*
   |--------------------------------------------------------------------------
