@@ -54,6 +54,10 @@
     "[html]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[antlers]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.documentSelectors": ["**/*.antlers.html"],
     "files.associations": {},
     "editor.fontSize": 14,
     "editor.codeLens": false,

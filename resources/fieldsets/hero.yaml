@@ -35,11 +35,13 @@ fields:
   - handle: hero_cardlet_thumbnail
     field:
       container: assets
+      folder: hero
+      type: assets
       dynamic: id
       restrict: true
-      type: assets
       display: "Cardlet Thumbnail"
       width: 50
+      max_files: 1
       if:
         hero_type: "equals fullscreen"
   - handle: hero_cardlet_label

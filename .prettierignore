@@ -1,4 +1,3 @@
 # .prettierignore
-manifest.antlers.html
-robots.antlers.html
-# layout.antlers.html
+# List files and folders here to prevent Prettier from formatting them.
+# To disable formatting for a specific file, you can also add `@format false` at the top of that file.

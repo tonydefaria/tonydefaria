@@ -50,10 +50,13 @@ fields:
   - handle: seo_opengraph_image
     field:
       container: assets
-      type: assets
-      display: Image
-      max_files: 1
       folder: opengraph
+      type: assets
+      dynamic: id
+      restrict: true
+      display: Image
+      width: 50
+      max_files: 1
   - handle: seo_keywords
     field:
       type: text

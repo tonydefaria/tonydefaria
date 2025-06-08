@@ -82,7 +82,13 @@ return [
     */
 
     'defaults' => [
-      // 'quality' => 50,
+      'quality'       => 100,
+      'format'        => 'webp',
+      'sharpen'       => 1,
+      'fit'           => 'contain',
+      'encodeOptions' => [
+        'webp' => ['lossless' => true],
+      ],
     ],
 
     /*

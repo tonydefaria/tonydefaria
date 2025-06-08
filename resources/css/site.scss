@@ -1,7 +1,15 @@
 // Frontend Styles
 // --------------------------------------------------------------------
+
 body {
-  font-family: "Open Sans", sans-serif;
   background-color: white;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
+}
+
+img {
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
 }

@@ -15,5 +15,5 @@
   "trailingComma": "none",
   "printWidth": 6400,
   "proseWrap": "preserve",
-  "antlersLanguageServer.formatterIgnoreExtensions": ["xml"]
+  "antlersLanguageServer.formatterIgnoreExtensions": ["xml", "txt", "md", "markdown"]
 }
