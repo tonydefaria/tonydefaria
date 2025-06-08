@@ -82,7 +82,7 @@ return [
     */
 
     'defaults' => [
-      'quality'       => 100,
+      'quality'       => 80,
       'format'        => 'webp',
       'sharpen'       => 1,
       'fit'           => 'contain',
@@ -119,7 +119,7 @@ return [
     |
     */
 
-    'generate_presets_on_upload' => true,
+    'generate_presets_on_upload' => false,
 
   ],
 
