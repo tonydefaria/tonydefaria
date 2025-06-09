@@ -45,12 +45,12 @@ return [
 
     'do' => array_merge($spacesBase, [
       'bucket' => env('DO_SPACES_BUCKET'),
-      'url' => env('ASSETS_URL'),
+      'url' => env('DO_SPACES_BUCKET_URL'),
     ]),
 
     'do_glide' => array_merge($spacesBase, [
       'bucket' => env('DO_SPACES_GLIDE_BUCKET'),
-      'url' => env('ASSETS_GLIDE_URL'),
+      'url' => env('DO_SPACES_GLIDE_BUCKET_URL'),
     ]),
 
     // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //

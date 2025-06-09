@@ -24,9 +24,7 @@ return [
   | application here. To retrieve them, use {{ config:app:variable_name }}.
   |
   */
-
-  'assets_cdn' => env('ASSETS_URL'),
-  'assets_glide_cdn' => env('ASSETS_GLIDE_URL'),
+  'local_bucket_url' => env('LOCAL_BUCKET_URL', null),
 
   /*
   |--------------------------------------------------------------------------
