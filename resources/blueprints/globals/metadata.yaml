@@ -105,6 +105,3 @@ tabs:
       - display: Twitter
         fields:
           - import: twitter
-      - display: Favicons
-        fields:
-          - import: favicons

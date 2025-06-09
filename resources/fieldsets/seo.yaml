@@ -30,7 +30,7 @@ fields:
           value: Article
       default: website
       type: select
-      display: Opengraph Type
+      display: "Opengraph Type"
       width: 50
   - handle: seo_title
     field:
@@ -60,4 +60,4 @@ fields:
   - handle: seo_keywords
     field:
       type: text
-      display: Seo Keywords
+      display: "Seo Keywords"

@@ -1,34 +1,28 @@
 title: Opengraph
 fields:
-  -
-    handle: opengraph_type
+  - handle: opengraph_type
     field:
       default: website
       options:
-        -
-          key: website
+        - key: website
           value: Website
-        -
-          key: article
+        - key: article
           value: Article
       type: select
       display: Type
       width: 50
-  -
-    handle: opengraph_site_name
+  - handle: opengraph_site_name
     field:
-      default: 'Tony de Faria'
+      default: "Tony de Faria"
       type: text
-      display: 'Site Name'
+      display: "Site Name"
       width: 50
-  -
-    handle: opengraph_image
+  - handle: opengraph_image
     field:
       container: assets
-      folder: opengraph
       type: assets
-      dynamic: id
       restrict: true
       display: Image
       width: 50
       max_files: 1
+      folder: opengraph
