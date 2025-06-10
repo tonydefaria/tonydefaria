@@ -18,11 +18,11 @@ return [
   'enabled' => env('STATAMIC_API_ENABLED', false),
 
   'resources' => [
-    'collections' => false,
-    'navs' => false,
-    'taxonomies' => false,
-    'assets' => false,
-    'globals' => false,
+    'collections' => true,
+    'navs' => true,
+    'taxonomies' => true,
+    'assets' => true,
+    'globals' => true,
     'forms' => false,
     'users' => false,
   ],

@@ -5,100 +5,54 @@
 
 <figure>
   <picture>
-    {{# 240px #}}
-    <source
-      media="(max-width: 240px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="240" height="120" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="480" height="240" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 360px #}}
-    <source
-      media="(max-width: 360px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="360" height="160" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="720" height="360" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 480px #}}
-    <source
-      media="(max-width: 480px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="480" height="240" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 720px #}}
-    <source
-      media="(max-width: 720px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="720" height="360" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="1440" height="720" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 960px #}}
-    <source
-      media="(max-width: 960px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 1440px #}}
-    <source
-      media="(max-width: 1440px)"
-      type="image/webp"
-      srcset="
-        {{ glide:source width="1440" height="720" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="2880" height="1440" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
-    {{# 1920px #}}
-    <source
-      type="image/webp"
-      srcset="
-        {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-        {{ glide:source width="3840" height="1920" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-      "
-      sizes="100vw"
-    />
+    {{ if source }}
+      {{# Mobile #}}
+      <source
+        media="(max-width: 480px)"
+        type="image/webp"
+        srcset="
+          {{ glide:source width="480" height="240" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
+          {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
+        "
+        sizes="480px"
+      />
+      {{# Tablet #}}
+      <source
+        media="(min-width: 481px) and (max-width: 960px)"
+        type="image/webp"
+        srcset="
+          {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
+          {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
+        "
+        sizes="960px"
+      />
+      {{# Desktop #}}
+      <source
+        media="(min-width: 961px)"
+        type="image/webp"
+        srcset="
+          {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
+          {{ glide:source width="3840" height="1920" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
+        "
+        sizes="1920px"
+      />
+    {{ /if }}
     {{# Fallback #}}
     <img
-      src="{{ glide:source width="480" format="jpg" }}{{ url }}{{ /glide:source }}"
+      src="{{ glide:source width="480" height="240" format="jpg" }}{{ url }}{{ /glide:source }}"
       srcset="
-        {{ glide:source width="240" format="jpg" }}{{ url }} 240w{{ /glide:source }},
-        {{ glide:source width="360" format="jpg" }}{{ url }} 360w{{ /glide:source }},
-        {{ glide:source width="480" format="jpg" }}{{ url }} 480w{{ /glide:source }},
-        {{ glide:source width="720" format="jpg" }}{{ url }} 720w{{ /glide:source }},
-        {{ glide:source width="960" format="jpg" }}{{ url }} 960w{{ /glide:source }},
-        {{ glide:source width="1440" format="jpg" }}{{ url }} 1440w{{ /glide:source }},
-        {{ glide:source width="1920" format="jpg" }}{{ url }} 1920w{{ /glide:source }},
-        {{ glide:source width="3840" format="jpg" }}{{ url }} 3840w{{ /glide:source }}
+        {{ glide:source width="480" height="240" format="jpg" }}{{ url }} 480w{{ /glide:source }},
+        {{ glide:source width="960" height="480" format="jpg" }}{{ url }} 960w{{ /glide:source }},
+        {{ glide:source width="1920" height="960" format="jpg" }}{{ url }} 1920w{{ /glide:source }}
       "
       sizes="
-        (max-width: 240px) 240px,
-        (max-width: 360px) 360px,
         (max-width: 480px) 480px,
-        (max-width: 720px) 720px,
-        (max-width: 960px) 960px,
-        (max-width: 1440px) 1440px,
-        (max-width: 1920px) 1920px,
-        (min-width: 1921px) 3840px
+        (min-width: 481px) and (max-width: 960px) 960px,
+        (min-width: 961px) 1920px
       "
       alt="{{ alt }}"
       title="{{ title }}"
+      loading="lazy"
     />
   </picture>
   {{ if caption }}

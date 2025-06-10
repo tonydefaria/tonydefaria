@@ -32,15 +32,39 @@ fields:
       smartypants: true
       type: markdown
       display: Lead
-  - handle: hero_cardlet_thumbnail
+  - handle: hero_cardlet_thumbnail_mobile
     field:
       container: assets
       folder: hero
       type: assets
       dynamic: id
       restrict: true
-      display: "Cardlet Thumbnail"
-      width: 50
+      display: "Cardlet Thumbnail - Mobile"
+      width: 33
+      max_files: 1
+      if:
+        hero_type: "equals fullscreen"
+  - handle: hero_cardlet_thumbnail_tablet
+    field:
+      container: assets
+      folder: hero
+      type: assets
+      dynamic: id
+      restrict: true
+      display: "Cardlet Thumbnail - Tablet"
+      width: 33
+      max_files: 1
+      if:
+        hero_type: "equals fullscreen"
+  - handle: hero_cardlet_thumbnail_desktop
+    field:
+      container: assets
+      folder: hero
+      type: assets
+      dynamic: id
+      restrict: true
+      display: "Cardlet Thumbnail - Desktop"
+      width: 33
       max_files: 1
       if:
         hero_type: "equals fullscreen"
@@ -64,3 +88,4 @@ fields:
       validate:
         - sometimes
         - null
+      width: 50
