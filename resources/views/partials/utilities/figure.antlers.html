@@ -49,19 +49,8 @@
       {{ asset url="{{source}}" }}
         <img
           src="{{ glide:source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:source }}"
-          srcset="
-            {{ glide:source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:source }},
-            {{ glide:tablet_source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:tablet_source }},
-            {{ glide:desktop_source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:desktop_source }}
-          "
-          sizes="
-            (max-width: 480px) 480px,
-            (min-width: 481px) and (max-width: 960px) 960px,
-            (min-width: 961px) 1920px,
-            100vw
-          "
           alt="{{ alt }}"
-          title="{{ title }}"
+          {{ if source }} title="{{ title }}" {{ /if }}
           width="{{ width }}"
           height="{{ height }}"
           loading="lazy"
