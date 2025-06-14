@@ -49,8 +49,8 @@
       {{ asset url="{{source}}" }}
         <img
           src="{{ glide:source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:source }}"
-          alt="{{ alt }}"
-          {{ if source }} title="{{ title }}" {{ /if }}
+          alt="{{ metadata:application_name }} :: {{ alt }}"
+          title="{{ metadata:application_name }} :: {{ title }}"
           width="{{ width }}"
           height="{{ height }}"
           loading="lazy"
@@ -59,9 +59,9 @@
       {{ /asset }}
     {{ /if }}
   </picture>
-  {{ if source }}
-    {{ asset url="{{source}}" }}
+  {{ asset url="{{source}}" }}
+    {{ if caption }}
       <figcaption>{{ caption }}</figcaption>
-    {{ /asset }}
-  {{ /if }}
+    {{ /if }}
+  {{ /asset }}
 </figure>
