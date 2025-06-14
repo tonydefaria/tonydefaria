@@ -82,7 +82,7 @@ return [
     */
 
     'defaults' => [
-      'quality'       => 80,
+      'quality'       => 90,
       'format'        => 'webp',
       'sharpen'       => 1,
       'fit'           => 'contain',

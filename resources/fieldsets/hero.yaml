@@ -32,14 +32,14 @@ fields:
       smartypants: true
       type: markdown
       display: Lead
-  - handle: hero_cardlet_thumbnail_mobile
+  - handle: hero_cardlet_thumbnail
     field:
       container: assets
       folder: hero
       type: assets
       dynamic: id
       restrict: true
-      display: "Cardlet Thumbnail - Mobile"
+      display: "Cardlet Thumbnail"
       width: 33
       max_files: 1
       if:

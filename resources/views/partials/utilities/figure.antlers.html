@@ -5,57 +5,74 @@
 
 <figure>
   <picture>
+    {{# Mobile #}}
     {{ if source }}
-      {{# Mobile #}}
-      <source
-        media="(max-width: 480px)"
-        type="image/webp"
-        srcset="
-          {{ glide:source width="480" height="240" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-          {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-        "
-        sizes="480px"
-      />
-      {{# Tablet #}}
-      <source
-        media="(min-width: 481px) and (max-width: 960px)"
-        type="image/webp"
-        srcset="
-          {{ glide:source width="960" height="480" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-          {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-        "
-        sizes="960px"
-      />
-      {{# Desktop #}}
-      <source
-        media="(min-width: 961px)"
-        type="image/webp"
-        srcset="
-          {{ glide:source width="1920" height="960" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 1x{{ /glide:source }},
-          {{ glide:source width="3840" height="1920" format="webp" quality="80" sharpen="1" fit="crop_focal" }}{{ url }} 2x{{ /glide:source }}
-        "
-        sizes="1920px"
-      />
+      {{ asset url="{{source}}" }}
+        <source
+          media="(max-width: 480px)"
+          srcset="
+            {{ glide:url width="{{ width / 2 }}" format="webp" }}{{ url }} 1x{{ /glide:url }},
+            {{ glide:url format="webp" }}{{ url }} 2x{{ /glide:url }}
+          "
+          sizes="480px"
+        />
+      {{ /asset }}
+    {{ /if }}
+    {{# Tablet #}}
+    {{ if tablet_source }}
+      {{ asset url="{{tablet_source}}" }}
+        <source
+          media="(min-width: 481px) and (max-width: 960px)"
+          srcset="
+            {{ glide:url width="{{ width / 2 }}" format="webp" }}{{ url }} 1x{{ /glide:url }},
+            {{ glide:url format="webp" }}{{ url }} 2x{{ /glide:url }}
+          "
+          sizes="960px"
+        />
+      {{ /asset }}
+    {{ /if }}
+    {{# Desktop #}}
+    {{ if desktop_source }}
+      {{ asset url="{{desktop_source}}" }}
+        <source
+          media="(min-width: 961px)"
+          srcset="
+            {{ glide:url width="{{ width / 2 }}" format="webp" }}{{ url }} 1x{{ /glide:url }},
+            {{ glide:url format="webp" }}{{ url }} 2x{{ /glide:url }}
+          "
+          sizes="1920px"
+        />
+      {{ /asset }}
     {{ /if }}
     {{# Fallback #}}
-    <img
-      src="{{ glide:source width="480" height="240" format="jpg" }}{{ url }}{{ /glide:source }}"
-      srcset="
-        {{ glide:source width="480" height="240" format="jpg" }}{{ url }} 480w{{ /glide:source }},
-        {{ glide:source width="960" height="480" format="jpg" }}{{ url }} 960w{{ /glide:source }},
-        {{ glide:source width="1920" height="960" format="jpg" }}{{ url }} 1920w{{ /glide:source }}
-      "
-      sizes="
-        (max-width: 480px) 480px,
-        (min-width: 481px) and (max-width: 960px) 960px,
-        (min-width: 961px) 1920px
-      "
-      alt="{{ alt }}"
-      title="{{ title }}"
-      loading="lazy"
-    />
+    {{ if source }}
+      {{ asset url="{{source}}" }}
+        <img
+          src="{{ glide:source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:source }}"
+          srcset="
+            {{ glide:source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:source }},
+            {{ glide:tablet_source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:tablet_source }},
+            {{ glide:desktop_source width="{{ width / 2 }}" format="webp" }}{{ url }}{{ /glide:desktop_source }}
+          "
+          sizes="
+            (max-width: 480px) 480px,
+            (min-width: 481px) and (max-width: 960px) 960px,
+            (min-width: 961px) 1920px,
+            100vw
+          "
+          alt="{{ alt }}"
+          title="{{ title }}"
+          width="{{ width }}"
+          height="{{ height }}"
+          loading="lazy"
+          decoding="async"
+        />
+      {{ /asset }}
+    {{ /if }}
   </picture>
-  {{ if caption }}
-    <figcaption>{{ caption }}</figcaption>
+  {{ if source }}
+    {{ asset url="{{source}}" }}
+      <figcaption>{{ caption }}</figcaption>
+    {{ /asset }}
   {{ /if }}
 </figure>
