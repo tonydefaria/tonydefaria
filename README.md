@@ -1,16 +1,30 @@
-## Hi there 👋
+# 👋 Hey there, I'm Tony de Faria
 
-<!--
-**tonydefaria/tonydefaria** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a documentary photographer and storyteller exploring the intersection of **geopolitics**, **sociocultural parallels**, and **human narratives**.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔍 What I'm Into
+
+- 🌍 Investigating global patterns and local identities
+- 🧭 Drawing links between history, culture, and current events
+- 🎙 Learning to think and write like a journalist
+
+---
+
+### 🤝 Let's Connect
+
+I'm interested in collaborations around:
+
+- Tools or projects that **raise awareness**
+- Creative work that highlights **social dynamics**
+- Visual storytelling grounded in **truth and context**
+
+---
+
+📫 Reach me at **[me@tonydefaria.com](mailto:me@tonydefaria.com)**
+🌐 Explore more: **[tonydefaria.com](https://tonydefaria.com)**
+
+---
+
+> “Documentary is not just about showing the world — it's about questioning it.”
